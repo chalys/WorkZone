@@ -1,0 +1,46 @@
+:root {
+/* Colores básicos */
+--orange: #E65100;       /* Naranja (primario) */
+--gray: #37474F;         /* Gris oscuro (secundario) */
+--white: #ffffff;        /* Blanco (fondo) */
+--yellow: #FDD835;       /* Amarillo (acento) */
+--black: #212121;        /* Negro (texto) */
+
+/* Colores fuertes */
+--darkorange: #BF4500;   /* Naranja oscuro (para hover o elementos destacados) */
+--darkgray: #263238;     /* Gris muy oscuro (para fondos o texto secundario) */
+--darkwhite: #E0E0E0;    /* Gris claro (para fondos de secciones) */
+--darkyellow: #C6A700;   /* Amarillo oscuro (para textos o botones secundarios) */
+--darkblack: #000000;    /* Negro absoluto (para textos importantes o títulos) */
+
+/* Colores suaves */
+--lightorange: #FF7433;  /* Naranja claro (para hover o elementos destacados suaves) */
+--lightgray: #546E7A;    /* Gris claro (para fondos o textos secundarios) */
+--lightwhite: #ffffff;    /* Blanco (para fondo) */
+--lightyellow: #FFFF6B;   /* Amarillo claro (para elementos suaves o destacados) */
+--lightblack: #484848;    /* Negro suave (para textos en fondos claros) */
+
+/* Colores adicionales para desarrollo */
+--blue: #2196F3;         /* Azul (para elementos de enlace o acción) */
+--red: #F44336;          /* Rojo (para alertas o mensajes de error) */
+--green: #4CAF50;        /* Verde (para mensajes de éxito o confirmación) */
+--purple: #9C27B0;       /* Púrpura (para elementos especiales o llamados a la acción) */
+--teal: #009688;         /* Verde azulado (para secciones informativas) */
+
+  /* FONTS */
+--FamilyRoboto: 'Roboto', sans-serif;
+}
+*{
+    font-family: var(--FamilyRoboto);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
