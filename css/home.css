@@ -141,10 +141,8 @@
     }
 
     .contact__form-group--fullname input {
-        flex: 1; /* Permite que ambos inputs ocupen el espacio disponible */
-    
-    }
-  
+        flex: 1; /* Permite que ambos inputs ocupen el espacio disponible */    
+    }  
 }
 
 @media (max-width: 768px) {
