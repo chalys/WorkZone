@@ -1,0 +1,157 @@
+/* Section cards*/
+.info-cards {    
+    background-color: #F3F3F4;    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.info-card {
+    /*background-color: white;*/
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;*/
+    max-width: 400px; /* ancho máximo en vista de escritorio */
+}
+
+.info-card__icon{
+    color: var(--primary-color);
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card__content{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card__title{
+    color: var(--darkgray);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-card__description{
+    color: var(--lightgray);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+
+
+/* Estilos Generales */
+.products__header, .reviews__header, .contact__header{
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 20px;
+}
+
+.products, .reviews, .contact{    
+    padding: 20px;
+}
+
+/* Estilos Seccion Contacto */
+.contact__content {
+    display: grid; /* Utiliza grid para la disposición de los elementos */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.contact__form {
+    
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna por defecto */
+    gap: 15px; /* Espacio entre los grupos de formularios */
+   
+}
+
+.contact__form-group {
+    display: flex;
+    flex-direction: column; /* Alinea el label y el input en columna */
+    width: 100%; /* Asegura que cada grupo ocupe el ancho completo */
+}
+
+.contact__form-group input,
+.contact__form-group textarea {
+    width: 100%; /* Asegura que el input y textarea ocupen todo el ancho */
+    padding: 10px; /* Añade padding para mejor usabilidad */
+    border: 1px solid #ccc; /* Bordes del input y textarea */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+}
+
+.contact__submit {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.contact__info {
+    display: grid; /* Utiliza grid para la disposición de los elementos */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.contact__info-item {
+    display: flex; /* Permite la alineación del icono y el contenido */
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el icono y el contenido al inicio */
+    background-color: #f9f9f9; /* Fondo claro para los artículos */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para el efecto de profundidad */
+}
+
+.contact__info-item i {
+    font-size: 24px; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el contenido */
+    color: #007BFF; /* Color del icono */
+}
+
+.contact__info-content h3 {
+    margin: 0 0 5px; /* Margen para el título */
+    font-weight: bold; /* Negrita para el título */
+}
+
+.contact__info-content p {
+    margin: 0; /* Sin margen para los párrafos */
+    color: #555; /* Color gris para el texto */
+}
+
+
+@media (min-width: 768px) {
+    
+    .contact__form-group--fullname {
+        display: flex; /* Disposición en línea */
+        flex-direction: row; /* Alinea el label y el input en columna */
+        gap: 15px; /* Espacio entre los campos */
+    }
+
+    .contact__form-group--fullname input {
+        flex: 1; /* Permite que ambos inputs ocupen el espacio disponible */
+    
+    }
+  
+}
+
+@media (max-width: 768px) {
+    .contact__content {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+    .contact__info {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+}
