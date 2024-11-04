@@ -91,6 +91,7 @@
     font-size: 24px;
 }
 
+
 /* Media Queries */
 @media (max-width: 768px) {
     .header__navbar-desktop {
@@ -131,4 +132,5 @@
         margin-left: 5px;
     }
 }
+
 

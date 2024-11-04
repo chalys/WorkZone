@@ -6,9 +6,135 @@
     <body>
         <!-- Header -->
         <%- include("../partials/header") %>
+            <!-- Main -->
+            <main>
+                <section class="info-cards">
 
-        <!-- Scripts -->
-        <%- include("../partials/scripts") %>
+                    <article class="info-card">
+                        <header class="info-card__icon">
+                            <i class="fa-solid fa-cart-flatbed"></i>
+                        </header>
+                        <div class="info-card__content">
+                            <h3 class="info-card__title">ENVIÓS A TODO EL PAÍS</h3>
+                            <p class="info-card__description">Consultar montos</p>
+                        </div>
+                    </article>
+                    <article class="info-card">
+                        <header class="info-card__icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </header>
+                        <div class="info-card__content">
+                            <h3 class="info-card__title">ENVIÓS AMBA 48HS - INTERIOR 72/96HS</h3>
+                            <p class="info-card__description">Envios</p>
+                        </div>
+                    </article>
+                    <article class="info-card">
+                        <header class="info-card__icon">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </header>
+                        <div class="info-card__content">
+                            <h3 class="info-card__title">PAGOS CON</h3>
+                            <p class="info-card__description">Transferencia bancaria y tarjetas</p>
+                        </div>
+                    </article>
+                    <article class="info-card">
+                        <header class="info-card__icon">
+                            <i class="fa-solid fa-award"></i>
+                        </header>
+                        <div class="info-card__content">
+                            <h3 class="info-card__title">GARANTÍA WORKZONE</h3>
+                            <p class="info-card__description">Incluye devolución</p>
+                        </div>
+                    </article>
+                </section>
+                <section class="products" id="products">
+                    <header class="products__header">
+                        <h2>Productos</h2>
+                        
+                    </header>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam! Nam blanditiis officiis accusamus iusto dignissimos nulla at quos. Quibusdam ratione quas iste culpa atque iusto ut id quisquam rem cum maxime ex sint hic perferendis, voluptates consequatur aperiam quis iure assumenda accusantium vel quasi? Soluta rerum vel voluptates voluptatem? Laboriosam voluptates ut ab facere quas amet beatae assumenda quidem libero, molestiae eum porro aut ex aliquam asperiores quasi rem expedita pariatur excepturi.</p>    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam! Nam blanditiis officiis accusamus iusto dignissimos nulla at quos. Quibusdam ratione quas iste culpa atque iusto ut id quisquam rem cum maxime ex sint hic perferendis, voluptates consequatur aperiam quis iure assumenda accusantium vel quasi? Soluta rerum vel voluptates voluptatem? Laboriosam voluptates ut ab facere quas amet beatae assumenda quidem libero, molestiae eum porro aut ex aliquam asperiores quasi rem expedita pariatur excepturi.</p>    
+                    </div>
+                </section>
+                <section class="reviews" id="reviews">
+                    <header class="reviews__header">
+                        <h2>Reseñas</h2>
+                    </header>
+                    <div>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam! Nam blanditiis officiis accusamus iusto dignissimos nulla at quos. Quibusdam ratione quas iste culpa atque iusto ut id quisquam rem cum maxime ex sint hic perferendis, voluptates consequatur aperiam quis iure assumenda accusantium vel quasi? Soluta rerum vel voluptates voluptatem? Laboriosam voluptates ut ab facere quas amet beatae assumenda quidem libero, molestiae eum porro aut ex aliquam asperiores quasi rem expedita pariatur excepturi.</p>  
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam! Nam blanditiis officiis accusamus iusto dignissimos nulla at quos. Quibusdam ratione quas iste culpa atque iusto ut id quisquam rem cum maxime ex sint hic perferendis, voluptates consequatur aperiam quis iure assumenda accusantium vel quasi? Soluta rerum vel voluptates voluptatem? Laboriosam voluptates ut ab facere quas amet beatae assumenda quidem libero, molestiae eum porro aut ex aliquam asperiores quasi rem expedita pariatur excepturi.</p>    
+                    </div>
+                </section>
+                <!-- Sección de Contacto -->
+                <section class="contact" id="contact">
+                    <header class="contact__header">
+                        <h2>Contacto</h2>
+                    </header>
+                    <div class="contact__content">
+                        <!-- Formulario de contacto -->
+                        <form class="contact__form" action="https://formspree.io/f/xovqebdq" method="POST">
+                            <div class="contact__form-group contact__form-group--fullname">
+                                <div class="contact__form-group">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="name" name="name" placeholder="Introduzca su nombre" required>
+                                </div>
+                                <div class="contact__form-group">
+                                    <label for="lastname">Apellido:</label>
+                                    <input type="text" id="lastname" name="lastname" placeholder="Introduzca su apellido" required>
+                                </div>
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" placeholder="Introduzca su correo electrónico" required>
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="message">Mensaje:</label>
+                                <textarea id="message" name="message" placeholder="Escriba su mensaje aquí" required></textarea>
+                            </div>
+                            <button type="submit" class="contact__submit">Enviar Mensaje</button>
+                        </form>
+
+                        <!-- Información adicional de contacto -->
+                        <div class="contact__info">
+                            <article class="contact__info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div class="contact__info-content">
+                                    <h3>Email</h3>
+                                    <p>Nuestro equipo está para ayudarte.</p>
+                                    <a href="mailto:hello@workzone.com">hello@workzone.com</a>
+                                </div>
+                            </article>
+                            <article class="contact__info-item">
+                                <i class="fa-solid fa-comments"></i>
+                                <div class="contact__info-content">
+                                    <h3>Chat en vivo</h3>
+                                    <p>¿Necesitas asistencia inmediata?</p>
+                                    <a href="#" class="contact__chat-link">Iniciar nuevo chat</a>
+                                </div>
+                            </article>
+                            <article class="contact__info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div class="contact__info-content">
+                                    <h3>Dirección</h3>
+                                    <p>Nuestra oficina se encuentra ubicada en:</p>
+                                    <address>123, Dirección al azar, CABA</address>
+                                </div>
+                            </article>
+                            <article class="contact__info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div class="contact__info-content">
+                                    <h3>Teléfono</h3>
+                                    <p>Atención de Lunes a Viernes, 8 am - 5 pm</p>
+                                    <p>(+54) Completar con número al azar</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Scripts -->
+            <%- include("../partials/scripts") %>
     </body>
 
 </html>
