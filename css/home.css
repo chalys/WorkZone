@@ -62,31 +62,6 @@
     gap: 15px;
 }
 
-.contact__label{
-    color:var(--gray);
-    font-size: 1rem;
-}
-.contact__form-group input,
-.contact__form-group textarea {   
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;    
-    width: 100%;
-    box-sizing: border-box;   
-    font-size: 1rem; 
-}
-
-.contact__submit {
-    padding: 10px;
-    background-color: var(--yellow);
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--white);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .contact__info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,30 +73,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #f9f9f9;
+    background-color: var(--white);
     padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
 
 .contact__info-item i {
     font-size: 24px;
-    margin-right: 10px;
-    color: var(--yellow);
-}
-
-.contact__info-content h3 {
-    margin: 0 0 5px;
-    font-weight: bold;
-    text-align: left;
+    margin: 0px 10px 10px 0px;    
     color: var(--gray);
-}
-
-.contact__info-content p {
-    margin: 0;
-    color: var(--gray);    
-    font-size: 0.9rem;
-    text-align: left;
 }
 
 .contact__chat-link, .contact__email-link{
@@ -142,8 +103,9 @@
 .newsletter__header{
     width: 40%;
 }
+
 .newsletter__title{
-    color: var(--white);
+    color: var(--gray);
 }
 .newsletter__form-container {
     display: flex;
@@ -160,29 +122,13 @@
 }
 
 .newsletter__input {
-    padding: 10px ;
-    border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;    
-    font-size: 1rem;
     width: 70%;
 }
 
 .newsletter__submit {
-    padding: 10px 20px;    
-    background-color: var(--white);
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--yellow);
-    border: 1px solid var(--white);
-    font-size: 1rem;
     border-radius: 0 5px 5px 0;
-    cursor: pointer;
     width: 30%;
-}
-
-.newsletter__submit:hover {
-    background-color: var(--yellow);
-    color: var(--white);
 }
 
 /*** SECTION NEWSLETTER ***/
@@ -191,7 +137,7 @@
 @media (max-width: 1023px) {
     .contact__grid {
         padding: 0px;
-        grid-template-columns: 1fr;/* Cambia a una sola columna */
+        grid-template-columns: 1fr;
         gap: 0px;
     }
 

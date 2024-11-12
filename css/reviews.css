@@ -55,12 +55,13 @@
     font-weight: bold;
     color: var(--gray);
     margin: 0;
+    margin-bottom: 5px;
     text-align:left;
 }
 
 .review__description {
     font-size: 0.9rem;
-    color: var(--gray);
+    color: var(--lightgray);
     margin-top: 0px;
     margin-bottom: 5px;
     text-align:left;
@@ -80,7 +81,7 @@
 }
 
 .review__social-icons i:hover {
-    color: #007BFF;
+    color: var(--lightblue);
 }
 
 @media (max-width: 1023px) {

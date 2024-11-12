@@ -1,9 +1,10 @@
 .info-cards {
     background-color: var(--yellow);
+    padding: 0px 200px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    gap: 20px;
+    
 }
 
 .info-card {
@@ -15,7 +16,7 @@
 }
 
 .info-card__icon {
-    color: var(--white);
+    color: var(--gray);
     font-size: 2.5rem;
     padding: 10px;
     display: flex;
@@ -30,20 +31,22 @@
 }
 
 .info-card__title {
-    color: var(--white);
+    color: var(--gray);
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0;
 }
 
 .info-card__description {
-    color: var(--white);
+    color: var(--gray);
     font-size: 1rem;
     margin-top: 5px;
 }
 
 @media (max-width: 1023px) {
-
+    .info-cards {     
+        padding: 0px;
+    }
 }
 
 @media (max-width: 767px) {
