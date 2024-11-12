@@ -1,157 +1,224 @@
-/* Section cards*/
-.info-cards {    
-    background-color: #F3F3F4;    
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+/*** GENERALES ***/
+.products,
+.categories,
+.about,
+.reviews,
+.contact {
+    padding: 40px 20px;
+    background-color: var(--white);
+    text-align: center;
 }
 
-.info-card {
-    /*background-color: white;*/
-    border-radius: 8px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;*/
-    max-width: 400px; /* ancho máximo en vista de escritorio */
-}
-
-.info-card__icon{
-    color: var(--primary-color);
-    font-size: 30px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info-card__content{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.info-card__title{
-    color: var(--darkgray);
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.info-card__description{
-    color: var(--lightgray);
-    font-size: 1rem;
-    margin-top: 5px;
-}
-
-
-
-/* Estilos Generales */
-.products__header, .reviews__header, .contact__header{
-    border-bottom: 1px solid var(--gray);
+.products__header,
+.categories__header,
+.about__header,
+.reviews__header,
+.contact__header {
     margin-bottom: 20px;
 }
 
-.products, .reviews, .contact{    
-    padding: 20px;
+.products__title,
+.categories__title,
+.about__title,
+.reviews__title,
+.contact__title,
+.newsletter__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
 }
+/*** /GENERALES ***/
 
+/*** SECTION CONTACT ***/
 /* Estilos Seccion Contacto */
-.contact__content {
-    display: grid; /* Utiliza grid para la disposición de los elementos */
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    gap: 20px; /* Espacio entre los elementos */
+.contact__grid {
+    padding: 0px 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .contact__form {
-    
     display: flex;
-    flex-direction: column; /* Asegura que los elementos estén en columna por defecto */
-    gap: 15px; /* Espacio entre los grupos de formularios */
-   
+    flex-direction: column;
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 15px;    
 }
 
 .contact__form-group {
+    display: flex;    
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.contact__form-group--fullname {
     display: flex;
-    flex-direction: column; /* Alinea el label y el input en columna */
-    width: 100%; /* Asegura que cada grupo ocupe el ancho completo */
+    flex-direction: row;
+    gap: 15px;
 }
-
-.contact__form-group input,
-.contact__form-group textarea {
-    width: 100%; /* Asegura que el input y textarea ocupen todo el ancho */
-    padding: 10px; /* Añade padding para mejor usabilidad */
-    border: 1px solid #ccc; /* Bordes del input y textarea */
-    border-radius: 5px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
-}
-
-.contact__submit {
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 
 .contact__info {
-    display: grid; /* Utiliza grid para la disposición de los elementos */
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    gap: 20px; /* Espacio entre los elementos */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;    
 }
 
 .contact__info-item {
-    display: flex; /* Permite la alineación del icono y el contenido */
+    display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea el icono y el contenido al inicio */
-    background-color: #f9f9f9; /* Fondo claro para los artículos */
-    padding: 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para el efecto de profundidad */
+    align-items: flex-start;
+    background-color: var(--white);
+    padding: 15px;
+    /*border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
 
 .contact__info-item i {
-    font-size: 24px; /* Tamaño del icono */
-    margin-right: 10px; /* Espacio entre el icono y el contenido */
-    color: #007BFF; /* Color del icono */
+    font-size: 24px;
+    margin: 0px 10px 10px 0px;    
+    color: var(--gray);
 }
 
-.contact__info-content h3 {
-    margin: 0 0 5px; /* Margen para el título */
-    font-weight: bold; /* Negrita para el título */
-}
-
-.contact__info-content p {
-    margin: 0; /* Sin margen para los párrafos */
-    color: #555; /* Color gris para el texto */
+.contact__chat-link, .contact__email-link{
+    color: var(--gray);
 }
 
 
-@media (min-width: 768px) {
+/*** SECTION CONTACT ***/
+
+/*** SECTION NEWSLETTER ***/
+.newsletter {
+    padding: 40px 220px;
+    background-color: var(--yellow);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter__header{
+    width: 40%;
+}
+
+.newsletter__title{
+    color: var(--gray);
+}
+.newsletter__form-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;    
+}
+
+.newsletter__form {
+    display: flex;
+    align-items: center;    
+    width: 100%;
+}
+
+.newsletter__input {
+    border-radius: 5px 0 0 5px;    
+    width: 70%;
+}
+
+.newsletter__submit {
+    border-radius: 0 5px 5px 0;
+    width: 30%;
+}
+
+/*** SECTION NEWSLETTER ***/
+
+/*** APLICAR A PANTALLAS DE HASTA 1023px ***/
+@media (max-width: 1023px) {
+    .contact__grid {
+        padding: 0px;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .contact__form {
+        margin: 0px;
+    }
+
+    .contact__info {
+        padding: 20px 0px 0px;
+        margin: 0px
+    }
+
+
+    .newsletter {
+        padding: 0px 20px;        
+    }
+
+    .newsletter__header{
+        width: 50%;
+    }
+
+    .newsletter__form-container {
+        width: 50%;
+    }   
+    .newsletter__input {
+        width: 65%;
+    }
     
+    .newsletter__submit {
+        width: 35%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact__info {
+        grid-template-columns: 1fr;    
+    }
+
     .contact__form-group--fullname {
-        display: flex; /* Disposición en línea */
-        flex-direction: row; /* Alinea el label y el input en columna */
-        gap: 15px; /* Espacio entre los campos */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .contact__form-group--fullname input {
-        flex: 1; /* Permite que ambos inputs ocupen el espacio disponible */
-    
+        flex: 1;
     }
-  
-}
 
-@media (max-width: 768px) {
-    .contact__content {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    /*** SECTION NEWSLETTER ***/
+    .newsletter {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .contact__info {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
+
+    .newsletter__header {
+        font-size: 1.5rem;
+        text-align: left;
+        margin: 0 0 10px 0;   
+        width: 100%;
     }
+
+    .newsletter__form-container {
+        width: 100%;
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .newsletter__input {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .newsletter__submit {
+        width: 100%;
+        border-radius: 5px;
+    }
+
 }

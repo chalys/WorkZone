@@ -7,12 +7,13 @@
         <!-- Header -->
         <%- include("../partials/header") %>
             <!-- Main -->
-            <main>
+            <main>                
+                <%- include("../partials/banner") %>
+                <!-- Section info-cards -->
                 <section class="info-cards">
-
                     <article class="info-card">
                         <header class="info-card__icon">
-                            <i class="fa-solid fa-cart-flatbed"></i>
+                            <i class="fa-solid fa-truck-ramp-box"></i>
                         </header>
                         <div class="info-card__content">
                             <h3 class="info-card__title">ENVIÓS A TODO EL PAÍS</h3>
@@ -30,7 +31,7 @@
                     </article>
                     <article class="info-card">
                         <header class="info-card__icon">
-                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <i class="fa-regular fa-credit-card"></i>
                         </header>
                         <div class="info-card__content">
                             <h3 class="info-card__title">PAGOS CON</h3>
@@ -43,56 +44,242 @@
                         </header>
                         <div class="info-card__content">
                             <h3 class="info-card__title">GARANTÍA WORKZONE</h3>
-                            <p class="info-card__description">Incluye devolución</p>
+                            <p class="info-card__description">Garantía de calidad, con opción a devolución.</p>
                         </div>
                     </article>
                 </section>
+                <!-- /Section info-cards -->
+                <!-- Section products -->
                 <section class="products" id="products">
                     <header class="products__header">
-                        <h2>Productos</h2>
-                        
+                        <h2 class="products__title">Colección Destacada</h2>                        
                     </header>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam! Nam blanditiis officiis accusamus iusto dignissimos nulla at quos. Quibusdam ratione quas iste culpa atque iusto ut id quisquam rem cum maxime ex sint hic perferendis, voluptates consequatur aperiam quis iure assumenda accusantium vel quasi? Soluta rerum vel voluptates voluptatem? Laboriosam voluptates ut ab facere quas amet beatae assumenda quidem libero, molestiae eum porro aut ex aliquam asperiores quasi rem expedita pariatur excepturi.</p>    
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam! Nam blanditiis officiis accusamus iusto dignissimos nulla at quos. Quibusdam ratione quas iste culpa atque iusto ut id quisquam rem cum maxime ex sint hic perferendis, voluptates consequatur aperiam quis iure assumenda accusantium vel quasi? Soluta rerum vel voluptates voluptatem? Laboriosam voluptates ut ab facere quas amet beatae assumenda quidem libero, molestiae eum porro aut ex aliquam asperiores quasi rem expedita pariatur excepturi.</p>    
+                    <div class="products__grid">
+                        <article class="product-card">
+                            <div class="product-card__image-container">
+                                <img src="images/products/casco_bombero.png" alt="Producto" class="product-card__image">
+                                <i class="fa-regular fa-heart product-card__favorite-icon"></i>
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">CATEGORIA</p>
+                                <p class="product-card__name">CASCO PARA BOMBEROS</p>
+                                <p class="product-card__price">$ 1.116.846,17</p>
+                                <button class="product-card__add-button btn btn--primary btn btn--primary">AÑADIR AL CARRITO</button>
+                            </div>
+                        </article>  
+                        <article class="product-card">
+                            <div class="product-card__image-container">
+                                <img src="images/products/anteojos-seguridad.jpg" alt="Producto" class="product-card__image">
+                                <i class="fa-regular fa-heart product-card__favorite-icon"></i>
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">CATEGORIA</p>
+                                <p class="product-card__name">ANTEOJOS DE SEGURIDAD</p>
+                                <p class="product-card__price">$ 23.972,23</p>
+                                <button class="product-card__add-button btn btn--primary">AÑADIR AL CARRITO</button>
+                            </div>
+                        </article>  
+                        <article class="product-card">
+                            <div class="product-card__image-container">
+                                <img src="images/products/protector-auditivo.jpg" alt="Producto" class="product-card__image">
+                                <i class="fa-regular fa-heart product-card__favorite-icon"></i>
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">CATEGORIA</p>
+                                <p class="product-card__name">PROTECTOR AUDITIVO DE COPA</p>
+                                <p class="product-card__price">$ 44.408,25</p>
+                                <button class="product-card__add-button btn btn--primary">AÑADIR AL CARRITO</button>
+                            </div>
+                        </article>  
+                        <article class="product-card">
+                            <div class="product-card__image-container">
+                                <img src="images/products/respirador-media.jpg" alt="Producto" class="product-card__image">
+                                <i class="fa-regular fa-heart product-card__favorite-icon"></i>
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">CATEGORIA</p>
+                                <p class="product-card__name">RESPIRADOR MEDIA CARA</p>
+                                <p class="product-card__price">$ 33.292,95</p>
+                                <button class="product-card__add-button btn btn--primary">AÑADIR AL CARRITO</button>
+                            </div>
+                        </article>  
+                        <article class="product-card">
+                            <div class="product-card__image-container">
+                                <img src="images/products/casco_de_altura.png" alt="Producto" class="product-card__image">
+                                <i class="fa-regular fa-heart product-card__favorite-icon"></i>
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">CATEGORIA</p>
+                                <p class="product-card__name">CASCO DE ALTURA</p>
+                                <p class="product-card__price">$ 64.575,30</p>
+                                <button class="product-card__add-button btn btn--primary">AÑADIR AL CARRITO</button>
+                            </div>
+                        </article>  
                     </div>
+                    <button class="products__view-more">VER MÁS</button>
                 </section>
+                <!-- /Section products -->
+                <!-- Section categories -->
+                <section class="categories" id="categories">
+                    <header class="categories__header">
+                        <h2 class="categories__title">Principales Categorías</h2>                         
+                    </header>
+                    <div class="categories__grid">
+                        <article class="category-card">
+                            <div class="category-card__image-container">
+                                <img src="images/categories/craneana.jpg" alt="Categoría" class="category-card__image">
+                                <p class="category-card__name">CRANEANA</p>
+                            </div>
+                        </article>  
+                        <article class="category-card">
+                            <div class="category-card__image-container">
+                                <img src="images/categories/auditiva.jpg" alt="Categoría" class="category-card__image">
+                                <p class="category-card__name">AUDITIVA</p>
+                            </div>
+                        </article>  
+                        <article class="category-card">
+                            <div class="category-card__image-container">
+                                <img src="images/categories/respiratoria.png" alt="Categoría" class="category-card__image">
+                                <p class="category-card__name">RESPIRATORIA</p>
+                            </div>
+                        </article>  
+                        <article class="category-card">
+                            <div class="category-card__image-container">
+                                <img src="images/categories/ocular.jpg" alt="Categoría" class="category-card__image">
+                                <p class="category-card__name">OCULAR</p>
+                            </div>
+                        </article>  
+                        <article class="category-card">
+                            <div class="category-card__image-container">
+                                <img src="images/categories/protector-facial.jpg" alt="Categoría" class="category-card__image">
+                                <p class="category-card__name">FACIAL</p>
+                            </div>
+                        </article>  
+                    </div>
+                    <button class="categories__view-more">VER MÁS</button>
+                </section>
+                <!-- /Section categories -->
+                <!-- Section about -->   
+                <section class="about" id="about">
+                    <header class="about__header">
+                        <h2 class="about__title">¿Por qué Nosotros?</h2>
+                    </header>
+                    <div class="about__content">
+                        <p class="about__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam!
+                        </p>
+                        <button type="submit" class="about__button">VER MÁS</button>
+                    </div>
+                </section> 
+                <!-- /Section about -->
+                <!-- Section review -->               
                 <section class="reviews" id="reviews">
                     <header class="reviews__header">
-                        <h2>Reseñas</h2>
+                        <h2 class="reviews__title">Reseñas</h2>
                     </header>
-                    <div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam! Nam blanditiis officiis accusamus iusto dignissimos nulla at quos. Quibusdam ratione quas iste culpa atque iusto ut id quisquam rem cum maxime ex sint hic perferendis, voluptates consequatur aperiam quis iure assumenda accusantium vel quasi? Soluta rerum vel voluptates voluptatem? Laboriosam voluptates ut ab facere quas amet beatae assumenda quidem libero, molestiae eum porro aut ex aliquam asperiores quasi rem expedita pariatur excepturi.</p>  
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam! Nam blanditiis officiis accusamus iusto dignissimos nulla at quos. Quibusdam ratione quas iste culpa atque iusto ut id quisquam rem cum maxime ex sint hic perferendis, voluptates consequatur aperiam quis iure assumenda accusantium vel quasi? Soluta rerum vel voluptates voluptatem? Laboriosam voluptates ut ab facere quas amet beatae assumenda quidem libero, molestiae eum porro aut ex aliquam asperiores quasi rem expedita pariatur excepturi.</p>    
+                    <div class="reviews__grid">
+                        <article class="review__card">
+                            <div class="review__content">
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at repellat.
+                                </p>
+                            </div>
+                            <div class="review__footer">
+                                <img src="images/users/male-user1.jpg" alt="Foto del revisor" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__name">Nombre de usuario</p>
+                                    <p class="review__description">Número de días de comentario</p>
+                                    <div class="review__social-icons">                                        
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="review__card">
+                            <div class="review__content">
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at repellat.
+                                </p>
+                            </div>
+                            <div class="review__footer">
+                                <img src="images/users/female-user2.jpg" alt="Foto del revisor" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__name">Nombre de usuario</p>
+                                    <p class="review__description">Número de días de comentario</p>
+                                    <div class="review__social-icons">                                        
+                                        <i class="fa-brands fa-facebook"></i>                                    
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="review__card">
+                            <div class="review__content">
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at repellat.
+                                </p>
+                            </div>
+                            <div class="review__footer">
+                                <img src="images/users/male-user2.jpg" alt="Foto del revisor" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__name">Nombre de usuario</p>
+                                    <p class="review__description">Número de días de comentario</p>
+                                    <div class="review__social-icons">                                        
+                                        <i class="fa-brands fa-facebook"></i>                                    
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="review__card">
+                            <div class="review__content">
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at repellat.
+                                </p>
+                            </div>
+                            <div class="review__footer">
+                                <img src="images/users/female-user1.jpg" alt="Foto del revisor" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__name">Nombre de usuario</p>
+                                    <p class="review__description">Número de días de comentario</p>
+                                    <div class="review__social-icons">                                        
+                                        <i class="fa-brands fa-facebook"></i>                                    
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </section>
-                <!-- Sección de Contacto -->
+                <!-- /Section review -->   
+                <!-- Section contact -->
                 <section class="contact" id="contact">
                     <header class="contact__header">
-                        <h2>Contacto</h2>
+                        <h2 class="contact__title">Contacto</h2>
                     </header>
-                    <div class="contact__content">
+                    <div class="contact__grid">
                         <!-- Formulario de contacto -->
                         <form class="contact__form" action="https://formspree.io/f/xovqebdq" method="POST">
                             <div class="contact__form-group contact__form-group--fullname">
                                 <div class="contact__form-group">
-                                    <label for="name">Nombre:</label>
-                                    <input type="text" id="name" name="name" placeholder="Introduzca su nombre" required>
+                                    <label class="label label--form" for="name">Nombre:</label>
+                                    <input class="input" type="text" id="name" name="name" placeholder="Introduzca su nombre" required>
                                 </div>
-                                <div class="contact__form-group">
-                                    <label for="lastname">Apellido:</label>
-                                    <input type="text" id="lastname" name="lastname" placeholder="Introduzca su apellido" required>
+                                <div class="contact__form-group ">
+                                    <label class="label label--form" for="lastname">Apellido:</label>
+                                    <input class="input" type="text" id="lastname" name="lastname" placeholder="Introduzca su apellido" required>
                                 </div>
                             </div>
                             <div class="contact__form-group">
-                                <label for="email">Correo Electrónico:</label>
-                                <input type="email" id="email" name="email" placeholder="Introduzca su correo electrónico" required>
+                                <label class="label label--form " for="email">Correo Electrónico:</label>
+                                <input class="input" type="email" id="email" name="email" placeholder="Introduzca su correo electrónico" required>
                             </div>
                             <div class="contact__form-group">
-                                <label for="message">Mensaje:</label>
-                                <textarea id="message" name="message" placeholder="Escriba su mensaje aquí" required></textarea>
+                                <label class="label label--form" for="message">Mensaje:</label>
+                                <textarea class="input" id="message" name="message" placeholder="Escriba su mensaje aquí" required></textarea>
                             </div>
-                            <button type="submit" class="contact__submit">Enviar Mensaje</button>
+                            <button type="submit" class="contact__submit btn btn--primary">ENVIAR MENSAJE</button>
                         </form>
 
                         <!-- Información adicional de contacto -->
@@ -100,38 +287,52 @@
                             <article class="contact__info-item">
                                 <i class="fa-solid fa-envelope"></i>
                                 <div class="contact__info-content">
-                                    <h3>Email</h3>
-                                    <p>Nuestro equipo está para ayudarte.</p>
-                                    <a href="mailto:hello@workzone.com">hello@workzone.com</a>
+                                    <h3 class="label--medium">Email</h3>
+                                    <p class="label--small">Nuestro equipo está para ayudarte.</p>
+                                    <p class="label--small"><a href="mailto:hello@workzone.com" class="contact__email-link">hello@workzone.com</a></p>                                    
                                 </div>
                             </article>
                             <article class="contact__info-item">
                                 <i class="fa-solid fa-comments"></i>
                                 <div class="contact__info-content">
-                                    <h3>Chat en vivo</h3>
-                                    <p>¿Necesitas asistencia inmediata?</p>
-                                    <a href="#" class="contact__chat-link">Iniciar nuevo chat</a>
+                                    <h3 class="label--medium">Chat en vivo</h3>
+                                    <p class="label--small">¿Necesitas asistencia inmediata?</p>
+                                    <p class="label--small"><a href="#" class="contact__chat-link">Iniciar nuevo chat</a></p>                                    
                                 </div>
                             </article>
                             <article class="contact__info-item">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <div class="contact__info-content">
-                                    <h3>Dirección</h3>
-                                    <p>Nuestra oficina se encuentra ubicada en:</p>
-                                    <address>123, Dirección al azar, CABA</address>
+                                    <h3 class="label--medium">Dirección</h3>
+                                    <p class="label--small">Nuestra oficina se encuentra ubicada en:</p>
+                                    <p class="label--small">123, Zuviria, CABA</p>                                    
                                 </div>
                             </article>
                             <article class="contact__info-item">
                                 <i class="fa-solid fa-phone"></i>
                                 <div class="contact__info-content">
-                                    <h3>Teléfono</h3>
-                                    <p>Atención de Lunes a Viernes, 8 am - 5 pm</p>
-                                    <p>(+54) Completar con número al azar</p>
+                                    <h3 class="label--medium">Teléfono</h3>
+                                    <p class="label--small">Atención de Lunes a Viernes, 8 am - 5 pm</p>
+                                    <p class="label--small">(+54) 1156092589</p>
                                 </div>
                             </article>
                         </div>
                     </div>
                 </section>
+                <!-- /Section contact -->
+                <!-- Section newsletter -->
+                <section class="newsletter" id="newsletter">
+                    <div class="newsletter__header">
+                        <h2 class="newsletter__title">Suscríbete a nuestro Newsletter</h2>                                       
+                    </div>
+                    <div class="newsletter__form-container">
+                        <form class="newsletter__form" action="">
+                            <input type="email" id="emailNewsLetter" name="emailNewsLetter" class="newsletter__input input" placeholder="Introduzca su correo electrónico" required>
+                            <button type="submit" class="newsletter__submit btn btn--secondary">SUSCRÍBETE</button>
+                        </form>
+                    </div>
+                </section>
+                <!-- /Section newsletter -->
             </main>
             <!-- Scripts -->
             <%- include("../partials/scripts") %>

@@ -4,3 +4,35 @@
         navList.classList.toggle("active");
     }
 </script>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+    }
+
+    function changeSlide(direction) {
+        currentSlide += direction;
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        } else if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        showSlide(currentSlide);
+    }
+
+    // Avance automático cada 5 segundos
+    setInterval(() => {
+        changeSlide(1);
+    }, 5000); // Cambia el número para ajustar la frecuencia (5000 ms = 5 segundos)
+
+    // Muestra el primer slide al cargar
+    showSlide(currentSlide);
+</script>
