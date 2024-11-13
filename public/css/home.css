@@ -133,6 +133,27 @@
 
 /*** SECTION NEWSLETTER ***/
 
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: var(--white); /* Color blanco para el icono */
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+
+
 /*** APLICAR A PANTALLAS DE HASTA 1023px ***/
 @media (max-width: 1023px) {
     .contact__grid {

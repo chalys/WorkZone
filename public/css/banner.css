@@ -1,6 +1,6 @@
 .site-header {
     background-color: var(--white);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
 
 .carousel {
@@ -49,7 +49,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
+    transform: translateY(-50%);    
 }
 
 .carousel-button {
@@ -58,14 +58,11 @@
     cursor: pointer;
     padding: 10px;
     font-size: 24px;
-
 }
 
-/* Responsivo */
 @media (max-width: 1023px) {
     .carousel-caption {
         max-width: 400px;
-
     }
 
     .carousel-title {
