@@ -1,6 +1,6 @@
 .site-header {
-    background-color: var(--white);
-    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+    /*background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
 
 .carousel {
@@ -28,17 +28,18 @@
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    color: var(--white);
     max-width: 800px;
 }
 
 .carousel-title {
+    color: var(--white);
     font-size: 4.5rem;
     font-weight: bold;
     margin: 0px;
 }
 
 .carousel-description {
+    color: var(--white);
     font-size: 1.8rem;
     margin-top: 0.625em;
 }
@@ -53,11 +54,16 @@
 }
 
 .carousel-button {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    color:var(--white);
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 24px;
+}
+.carousel-button:hover {
+    background-color: var(--yellow);
+    color:var(--gray);
 }
 
 @media (max-width: 1023px) {

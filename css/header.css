@@ -1,7 +1,5 @@
 .header__navbar {
     background-color: var(--yellow);
-    /*padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
     padding: 10px 220px;
 }
 
@@ -33,13 +31,17 @@
 }
 
 .header__nav-link {
-    text-decoration: none;
-    color: var(--gray);
+    /*text-decoration: none;*/
+    color: var(--darkgray);
     font-weight: 500;
 }
 
 .header__nav-link:hover {
-    color: var(--white);
+    text-decoration: underline;
+    color: var(--gray);
+    text-decoration-color: var(--gray);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
 
 .header__search-container {
@@ -55,12 +57,6 @@
 
 .header__search-button {
     border-radius: 0 5px 5px 0;
-    background-color: #f1f1f1;
-    /*padding: 6px 10px;
-    border: none;
-    background-color: #f1f1f1;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;*/
 }
 
 .header__icon-container {
@@ -69,10 +65,16 @@
 }
 
 .header__icon {
+    color: var(--darkgray);
     margin-left: 15px;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer;    
 }
+
+.header__icon:hover {
+    color: var(--gray);    
+}
+
 
 /* Navbar para Desktop */
 .header__navbar-desktop {

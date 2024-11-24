@@ -1,37 +1,30 @@
 :root {
-/* Colores básicos */
---orange: #E65100;       /* Naranja (primario) */
---gray: #333333;         /* Gris oscuro (secundario) */
---white: #ffffff;        /* Blanco (fondo) */
---yellow: #FFDE00;       /* Amarillo (acento) */
---black: #000000;        /* Negro (texto) */
+/* Colores principales */
+--gray: #666666;
+--white: #ffffff;
+--yellow: #ffde00;
+--black: #000000;
+--red: #FF5757; 
+--green: #4CAF50;
+--blue:#0066cc;
 
 /* Colores fuertes */
---darkorange: #BF4500;   /* Naranja oscuro (para hover o elementos destacados) */
---darkgray: #777777;     /* Gris muy oscuro (para fondos o texto secundario) */
---darkwhite: #E0E0E0;    /* Gris claro (para fondos de secciones) */
---darkyellow: #D4B800;   /* Amarillo oscuro (para textos o botones secundarios) */
---darkblack: #000000;    /* Negro absoluto (para textos importantes o títulos) */
+--darkgray: #333333;/*#1a1a1a;*/
+--darkwhite: #e5e5e5;
+--darkyellow: #ffd42a;; 
+--darkred: #D43A3A;
+--darkgreen: #388E3C;
+--darkblue:#004a99;
 
 /* Colores suaves */
---lightorange: #FF7433;  /* Naranja claro (para hover o elementos destacados suaves) */
---lightgray: #dddddd;    /* Gris claro (para fondos o textos secundarios) */
---lightwhite: #ffffff;    /* Blanco (para fondo) */
---lightyellow: #F9C97A;   /* Amarillo claro (para elementos suaves o destacados) */
---lightblack: #484848;    /* Negro suave (para textos en fondos claros) */
---lightblue:#3483FA;
-
-/* Colores adicionales para desarrollo */
---blue: #2196F3;         /* Azul (para elementos de enlace o acción) */
---red: #F44336;          /* Rojo (para alertas o mensajes de error) */
---green: #4CAF50;        /* Verde (para mensajes de éxito o confirmación) */
---purple: #9C27B0;       /* Púrpura (para elementos especiales o llamados a la acción) */
---teal: #009688;         /* Verde azulado (para secciones informativas) */
+--lightgray: #c4c4c4;
+--lightyellow: #fff066;
+--lightblack: #484848;
 
   /* FONTS */
 --FamilyRoboto: 'Roboto', sans-serif;
+--FamilyLato: 'Lato', sans-serif;
 }
-
 *{
     font-family: var(--FamilyRoboto);
 }
@@ -41,10 +34,13 @@ body {
     margin: 0px;
     box-sizing: border-box;
 }
+/*
+h1, h2, h3 {
+    font-family: var(--FamilyLato);
+}*/
 
 a {
     text-decoration: none;
-    
 }
 
 .btn {
@@ -53,29 +49,40 @@ a {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    /*font-weight: bold;*/
+    font-weight: 400;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .btn--primary {
     background-color: var(--yellow);
-    color: var(--gris);
+    color: var(--darkgray);
 }
 
 .btn--primary:hover {
     background-color: var(--darkyellow);
+    color: var(--darkgray);
 }
 
 .btn--secondary {
-    background-color: #f1f1f1;
-    border: 1px solid var(--white);
-    color: var(--gray);
+    background-color: var(--darkgray);    
+    color: var(--white);
 }
 
 .btn--secondary:hover {
-    background-color: var(--darkyellow);
-    border: 1px solid var(--white);
+    background-color: var(--gray);    
     color: var(--white);
+}
+
+.btn--tertiary {
+    background-color: var(--darkgray);
+    color: var(--white);
+}
+
+.btn--tertiary:hover {
+    background-color: var(--white);
+    border: 1px solid var(--darkgray);
+    color: var(--darkgray);
 }
 
 .label {
@@ -84,7 +91,14 @@ a {
     display: inline-block;
 }
 
-.label--small{
+.text--medium{
+    margin: 0 0 5px;
+    font-weight: bold;
+    text-align: left;
+    color: var(--gray);
+}
+
+.text--small{
     margin: 0;
     color: var(--gray);    
     font-size: 0.9rem;
@@ -92,12 +106,6 @@ a {
     margin-bottom: 5px;
 }
 
-.label--medium{
-    margin: 0 0 5px;
-    font-weight: bold;
-    text-align: left;
-    color: var(--gray);
-}
 
 .label--form {
     color: var(--gray);
