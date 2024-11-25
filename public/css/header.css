@@ -1,34 +1,39 @@
+/* Navbar principal */
 .header__navbar {
   background-color: var(--yellow);
   padding: 10px 20px;
 }
 
+/* Contenedor principal */
 .header__container {
-  /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* Lista de imágenes del navbar */
 .header__navbar-img-list {
   display: flex;
   align-items: center;
-  background-color: red;
-  width: 40%;
+  width: 50%;
 }
 
+/* Logo */
 .header__logo {
   height: 50px;
+  max-width: 100%;
 }
 
+/* Lista de navegación */
 .header__nav-list {
   list-style: none;
-  padding: 20 px;
+  padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
 }
 
+/* Items y enlaces del menú */
 .header__nav-item {
   margin: 0 15px;
 }
@@ -46,28 +51,34 @@
   text-underline-offset: 2px;
 }
 
+/* Contenedor del buscador */
 .header__search-container {
   display: flex;
   align-items: center;
-  background-color: red !important;
-  width: 30%;
+  width: 25%;
+  margin-left: auto;
 }
 
 .header__search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--lightgray);
   border-radius: 5px 0 0 5px;
-  /*  padding: 5px;
-    border: 1px solid #ccc;*/
 }
 
 .header__search-button {
+  padding: 8px 12px;
+  background-color: var(--darkgray);
+  border: 1px solid var(--lightgray);
   border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
+/* Iconos del navbar */
 .header__icon-container {
   display: flex;
   align-items: center;
-  justify-content: end;
-  background-color: red !important;
+  justify-content: flex-end;
   width: 10%;
 }
 
@@ -104,6 +115,7 @@
   width: 100%;
 }
 
+/* Botón de menú hamburguesa */
 .header__hamburger {
   background: none;
   border: none;
@@ -138,7 +150,6 @@
 
   .header__nav-list.active {
     display: flex;
-    flex-direction: column;
   }
 
   .header__search-container {
@@ -147,11 +158,59 @@
   }
 
   .header__search-input {
-    flex: 1;
     border-radius: 5px;
+  }
+
+  .header__icon-container {
+    width: auto;
+  }
+
+  .header__logo {
+    height: 40px; 
   }
 }
 
-/* Media Queries */
 @media (max-width: 767px) {
+  .header__container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header__navbar-mobile {
+    align-items: stretch;
+  }
+
+  .header__logo {
+    height: 35px;
+  }
+
+  .header__nav-list {
+    display: none;
+  }
+
+  .header__search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header__icon-container {
+    justify-content: center;
+  }
+
+  .header__search-input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .header__search-button {
+    font-size: 14px;
+  }
+
+  .header__hamburger {
+    align-self: flex-end;
+  }
+
+  .header__icon {
+    font-size: 18px;
+  }
 }
