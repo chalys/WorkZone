@@ -4,16 +4,16 @@
 --white: #ffffff;
 --yellow: #ffde00;
 --black: #000000;
---red: #FF5757; 
---green: #4CAF50;
+--red: #ff5757; 
+--green: #4caf50;
 --blue:#0066cc;
 
 /* Colores fuertes */
---darkgray: #333333;/*#1a1a1a;*/
+--darkgray: #333333;
 --darkwhite: #e5e5e5;
 --darkyellow: #ffd42a;; 
---darkred: #D43A3A;
---darkgreen: #388E3C;
+--darkred: #d43a3a;
+--darkgreen: #388e3c;
 --darkblue:#004a99;
 
 /* Colores suaves */
@@ -21,10 +21,11 @@
 --lightyellow: #fff066;
 --lightblack: #484848;
 
-  /* FONTS */
+  /* Fonts */
 --FamilyRoboto: 'Roboto', sans-serif;
 --FamilyLato: 'Lato', sans-serif;
 }
+
 *{
     font-family: var(--FamilyRoboto);
 }
@@ -85,12 +86,6 @@ a {
     color: var(--darkgray);
 }
 
-.label {
-    font-weight: 500;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
 .text--medium{
     margin: 0 0 5px;
     font-weight: bold;
@@ -106,6 +101,11 @@ a {
     margin-bottom: 5px;
 }
 
+.label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline-block;
+}
 
 .label--form {
     color: var(--gray);
@@ -121,9 +121,4 @@ a {
     outline: none;
     color: var(--gray);
     font-size: 1rem;
-}
-
-.label--highlight {
-    color: #e74c3c;
-    font-size: 16px;
 }
