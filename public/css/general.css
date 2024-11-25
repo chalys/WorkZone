@@ -1,35 +1,31 @@
 :root {
-/* Colores básicos */
---orange: #E65100;       /* Naranja (primario) */
---gray: #37474F;         /* Gris oscuro (secundario) */
---white: #ffffff;        /* Blanco (fondo) */
---yellow: #FDD835;       /* Amarillo (acento) */
---black: #212121;        /* Negro (texto) */
+/* Colores principales */
+--gray: #666666;
+--white: #ffffff;
+--yellow: #ffde00;
+--black: #000000;
+--red: #ff5757; 
+--green: #4caf50;
+--blue:#0066cc;
 
 /* Colores fuertes */
---darkorange: #BF4500;   /* Naranja oscuro (para hover o elementos destacados) */
---darkgray: #263238;     /* Gris muy oscuro (para fondos o texto secundario) */
---darkwhite: #E0E0E0;    /* Gris claro (para fondos de secciones) */
---darkyellow: #C6A700;   /* Amarillo oscuro (para textos o botones secundarios) */
---darkblack: #000000;    /* Negro absoluto (para textos importantes o títulos) */
+--darkgray: #333333;
+--darkwhite: #e5e5e5;
+--darkyellow: #ffd42a;; 
+--darkred: #d43a3a;
+--darkgreen: #388e3c;
+--darkblue:#004a99;
 
 /* Colores suaves */
---lightorange: #FF7433;  /* Naranja claro (para hover o elementos destacados suaves) */
---lightgray: #546E7A;    /* Gris claro (para fondos o textos secundarios) */
---lightwhite: #ffffff;    /* Blanco (para fondo) */
---lightyellow: #FFFF6B;   /* Amarillo claro (para elementos suaves o destacados) */
---lightblack: #484848;    /* Negro suave (para textos en fondos claros) */
+--lightgray: #c4c4c4;
+--lightyellow: #fff066;
+--lightblack: #484848;
 
-/* Colores adicionales para desarrollo */
---blue: #2196F3;         /* Azul (para elementos de enlace o acción) */
---red: #F44336;          /* Rojo (para alertas o mensajes de error) */
---green: #4CAF50;        /* Verde (para mensajes de éxito o confirmación) */
---purple: #9C27B0;       /* Púrpura (para elementos especiales o llamados a la acción) */
---teal: #009688;         /* Verde azulado (para secciones informativas) */
-
-  /* FONTS */
+  /* Fonts */
 --FamilyRoboto: 'Roboto', sans-serif;
+--FamilyLato: 'Lato', sans-serif;
 }
+
 *{
     font-family: var(--FamilyRoboto);
 }
@@ -39,8 +35,90 @@ body {
     margin: 0px;
     box-sizing: border-box;
 }
+/*
+h1, h2, h3 {
+    font-family: var(--FamilyLato);
+}*/
 
 a {
     text-decoration: none;
 }
 
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn--primary {
+    background-color: var(--yellow);
+    color: var(--darkgray);
+}
+
+.btn--primary:hover {
+    background-color: var(--darkyellow);
+    color: var(--darkgray);
+}
+
+.btn--secondary {
+    background-color: var(--darkgray);    
+    color: var(--white);
+}
+
+.btn--secondary:hover {
+    background-color: var(--gray);    
+    color: var(--white);
+}
+
+.btn--tertiary {
+    background-color: var(--darkgray);
+    color: var(--white);
+}
+
+.btn--tertiary:hover {
+    background-color: var(--white);
+    border: 1px solid var(--darkgray);
+    color: var(--darkgray);
+}
+
+.text--medium{
+    margin: 0 0 5px;
+    font-weight: bold;
+    text-align: left;
+    color: var(--gray);
+}
+
+.text--small{
+    margin: 0;
+    color: var(--gray);    
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.label--form {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid var(--lightgray);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    color: var(--gray);
+    font-size: 1rem;
+}
