@@ -1,0 +1,302 @@
+[
+    {
+      "id": 1,
+      "name": "Casco para Bomberos",
+      "description": "Casco diseñado para proteger la cabeza de los bomberos en situaciones de emergencia.",
+      "category": "Protección Craneana",
+      "price": 15000,
+      "image": "casco_bombero.jpg",
+      "brand": "SafetyPro",
+      "colors": ["Rojo", "Negro"]
+    },
+    {
+      "id": 2,
+      "name": "Anteojos de Seguridad",
+      "description": "Anteojos que protegen los ojos de impactos y partículas voladoras.",
+      "category": "Protección Ocular",
+      "price": 2500,
+      "image": "anteojos_seguridad.jpg",
+      "brand": "VisionGuard",
+      "colors": ["Transparente", "Negro"]
+    },
+    {
+      "id": 3,
+      "name": "Protector Auditivo de Copa",
+      "description": "Protección auditiva con copa, ideal para ambientes ruidosos.",
+      "category": "Protección Auditiva",
+      "price": 3500,
+      "image": "protector_auditivo.jpg",
+      "brand": "QuietSound",
+      "colors": ["Negro", "Azul"]
+    },
+    {
+      "id": 4,
+      "name": "Respirador Media Cara",
+      "description": "Respirador que cubre la nariz y la boca, perfecto para ambientes con contaminantes.",
+      "category": "Protección Respiratoria",
+      "price": 5000,
+      "image": "respirador_media_cara.jpg",
+      "brand": "AirSecure",
+      "colors": ["Gris", "Negro"]
+    },
+    {
+      "id": 5,
+      "name": "Casco de Altura",
+      "description": "Casco especializado para trabajos en alturas, con sistema de ajuste.",
+      "category": "Protección Craneana",
+      "price": 12000,
+      "image": "casco_de_altura.jpg",
+      "brand": "HighWork",
+      "colors": ["Blanco", "Amarillo"]
+    },
+    {
+      "id": 6,
+      "name": "Guantes de Protección",
+      "description": "Guantes resistentes que protegen las manos de cortes y abrasiones.",
+      "category": "Protección de Manos",
+      "price": 1500,
+      "image": "guantes_proteccion.jpg",
+      "brand": "HandSafe",
+      "colors": ["Negro", "Gris"]
+    },
+    {
+      "id": 7,
+      "name": "Botas de Seguridad",
+      "description": "Botas con puntera de acero, ideales para trabajos de construcción.",
+      "category": "Protección de Pies",
+      "price": 6500,
+      "image": "botas_seguridad.jpg",
+      "brand": "SteelToe",
+      "colors": ["Negro", "Marrón"]
+    },
+    {
+      "id": 8,
+      "name": "Mascarilla N95",
+      "description": "Mascarilla filtrante que protege contra partículas en el aire.",
+      "category": "Protección Respiratoria",
+      "price": 1000,
+      "image": "mascarilla_n95.jpg",
+      "brand": "AirClean",
+      "colors": ["Blanco"]
+    },
+    {
+      "id": 9,
+      "name": "Gafas de Protección UV",
+      "description": "Gafas diseñadas para proteger los ojos de los rayos UV.",
+      "category": "Protección Ocular",
+      "price": 3000,
+      "image": "gafas_uv.jpg",
+      "brand": "VisionGuard",
+      "colors": ["Transparente", "Negro"]
+    },
+    {
+      "id": 10,
+      "name": "Protectores Auditivos de Inserción",
+      "description": "Protectores auditivos que se insertan en el canal auditivo, cómodos y efectivos.",
+      "category": "Protección Auditiva",
+      "price": 2000,
+      "image": "protectores_insercion.jpg",
+      "brand": "SilentFit",
+      "colors": ["Negro", "Rojo"]
+    },
+    {
+      "id": 11,
+      "name": "Máscara Facial",
+      "description": "Máscara que cubre toda la cara, ideal para ambientes con productos químicos.",
+      "category": "Protección Facial",
+      "price": 4000,
+      "image": "mascara_facial.jpg",
+      "brand": "FaceShield",
+      "colors": ["Transparente", "Gris"]
+    },
+    {
+      "id": 12,
+      "name": "Zapatos de Seguridad",
+      "description": "Zapatos con suela antideslizante y puntera reforzada.",
+      "category": "Protección de Pies",
+      "price": 5500,
+      "image": "zapatos_seguridad.jpg",
+      "brand": "SafeStep",
+      "colors": ["Negro", "Gris"]
+    },
+    {
+      "id": 13,
+      "name": "Cubrebocas Desechable",
+      "description": "Cubrebocas desechable para protección contra partículas y gérmenes.",
+      "category": "Protección Respiratoria",
+      "price": 500,
+      "image": "cubrebocas_desechable.jpg",
+      "brand": "CleanMask",
+      "colors": ["Blanco", "Azul"]
+    },
+    {
+      "id": 14,
+      "name": "Guantes Anticorte",
+      "description": "Guantes diseñados para proteger contra cortes y abrasiones.",
+      "category": "Protección de Manos",
+      "price": 2500,
+      "image": "guantes_anticorte.jpg",
+      "brand": "CutGuard",
+      "colors": ["Gris", "Negro"]
+    },
+    {
+      "id": 15,
+      "name": "Arnés de Seguridad",
+      "description": "Arnés para trabajos en alturas, garantiza seguridad y comodidad.",
+      "category": "Protección Craneana",
+      "price": 20000,
+      "image": "arnes_seguridad.jpg",
+      "brand": "HighSecure",
+      "colors": ["Amarillo", "Negro"]
+    },
+    {
+        "id": 16,
+        "name": "Gafas Antivaho",
+        "description": "Gafas diseñadas para evitar el empañamiento en ambientes húmedos.",
+        "category": "Protección Ocular",
+        "price": 2800,
+        "image": "gafas_antivaho.jpg",
+        "brand": "VisionClear",
+        "colors": ["Transparente", "Negro"]
+      },
+      {
+        "id": 17,
+        "name": "Protector Auditivo Electrónico",
+        "description": "Protector auditivo que reduce el ruido, permitiendo comunicación.",
+        "category": "Protección Auditiva",
+        "price": 5500,
+        "image": "protector_auditivo_electronico.jpg",
+        "brand": "NoiseControl",
+        "colors": ["Negro", "Verde"]
+      },
+      {
+        "id": 18,
+        "name": "Respirador Full Face",
+        "description": "Respirador que cubre toda la cara para máxima protección.",
+        "category": "Protección Respiratoria",
+        "price": 18000,
+        "image": "respirador_full_face.jpg",
+        "brand": "AirSecure",
+        "colors": ["Negro", "Gris"]
+      },
+      {
+        "id": 19,
+        "name": "Botas Dieléctricas",
+        "description": "Botas resistentes a descargas eléctricas.",
+        "category": "Protección de Pies",
+        "price": 11000,
+        "image": "botas_dieletricas.jpg",
+        "brand": "ElectroSafe",
+        "colors": ["Negro", "Amarillo"]
+      },
+      {
+        "id": 20,
+        "name": "Guantes Térmicos",
+        "description": "Guantes que brindan protección contra altas temperaturas.",
+        "category": "Protección de Manos",
+        "price": 3500,
+        "image": "guantes_termicos.jpg",
+        "brand": "ThermoShield",
+        "colors": ["Rojo", "Negro"]
+      },
+      {
+        "id": 21,
+        "name": "Casco con Visor",
+        "description": "Casco con visor integrado para mayor protección.",
+        "category": "Protección Craneana",
+        "price": 14500,
+        "image": "casco_con_visor.jpg",
+        "brand": "VisionSafe",
+        "colors": ["Blanco", "Amarillo"]
+      },
+      {
+        "id": 22,
+        "name": "Protector de Cuello Ignífugo",
+        "description": "Protección para el cuello contra altas temperaturas.",
+        "category": "Protección Craneana",
+        "price": 4500,
+        "image": "protector_cuello_ignifugo.jpg",
+        "brand": "FireShield",
+        "colors": ["Negro", "Gris"]
+      },
+      {
+        "id": 23,
+        "name": "Gafas de Soldador Automáticas",
+        "description": "Gafas con oscurecimiento automático para soldadura.",
+        "category": "Protección Ocular",
+        "price": 9200,
+        "image": "gafas_soldador_auto.jpg",
+        "brand": "WeldVision",
+        "colors": ["Negro", "Rojo"]
+      },
+      {
+        "id": 24,
+        "name": "Respirador con Filtro Dual",
+        "description": "Respirador con filtros reemplazables para ambientes contaminados.",
+        "category": "Protección Respiratoria",
+        "price": 14500,
+        "image": "respirador_filtro_dual.jpg",
+        "brand": "PureAir",
+        "colors": ["Gris", "Azul"]
+      },
+      {
+        "id": 25,
+        "name": "Cubrecalzado de Seguridad",
+        "description": "Cubrecalzado impermeable y antideslizante.",
+        "category": "Protección de Pies",
+        "price": 2800,
+        "image": "cubrecalzado_seguridad.jpg",
+        "brand": "SafeFeet",
+        "colors": ["Negro", "Azul"]
+      },
+      {
+        "id": 26,
+        "name": "Guantes de Látex Industrial",
+        "description": "Guantes de látex de alta resistencia para uso industrial.",
+        "category": "Protección de Manos",
+        "price": 1500,
+        "image": "guantes_latex_industrial.jpg",
+        "brand": "HandProtect",
+        "colors": ["Amarillo", "Negro"]
+      },
+      {
+        "id": 27,
+        "name": "Casco de Rescate",
+        "description": "Casco liviano diseñado para rescates y trabajos de emergencia.",
+        "category": "Protección Craneana",
+        "price": 12500,
+        "image": "casco_rescate.jpg",
+        "brand": "RescueGear",
+        "colors": ["Rojo", "Blanco"]
+      },
+      {
+        "id": 28,
+        "name": "Protectores Auditivos Almohadillados",
+        "description": "Protección auditiva con almohadillas suaves para mayor comodidad.",
+        "category": "Protección Auditiva",
+        "price": 3200,
+        "image": "protectores_auditivos_almohadilla.jpg",
+        "brand": "ComfortQuiet",
+        "colors": ["Negro", "Azul"]
+      },
+      {
+        "id": 29,
+        "name": "Respirador de Carbón Activado",
+        "description": "Respirador para filtración avanzada de partículas y gases.",
+        "category": "Protección Respiratoria",
+        "price": 17500,
+        "image": "respirador_carbon_activado.jpg",
+        "brand": "CleanBreath",
+        "colors": ["Negro", "Gris"]
+      },
+      {
+        "id": 30,
+        "name": "Zapatos con Puntera de Fibra de Vidrio",
+        "description": "Zapatos de seguridad con puntera ligera y resistente.",
+        "category": "Protección de Pies",
+        "price": 8900,
+        "image": "zapatos_fibra_vidrio.jpg",
+        "brand": "LiteStep",
+        "colors": ["Negro", "Marrón"]
+      }
+  ]
