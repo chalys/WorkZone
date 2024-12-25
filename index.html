@@ -12,9 +12,11 @@
     <!-- Font Awesome -->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <!-- Style -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- Icon -->
-    <link rel="icon" href="images/workZone.ico" type="image/x-icon">
+    <link rel="icon" href="/images/workZone.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
     <body>
@@ -25,7 +27,7 @@
             <!-- Navbar para Desktop -->
             <div class="header__navbar-desktop">
                 <div class="header__navbar-img-list">
-                    <img src="images/workZone-logo-gray.png" alt="Logo WorkZone" class="header__logo">
+                    <img src="/images/workZone-logo-gray.png" alt="Logo WorkZone" class="header__logo">
                     <ul class="header__nav-list">
                         <li class="header__nav-item"><a href="#" class="header__nav-link">Inicio</a></li>
                         <li class="header__nav-item"><a href="#products" class="header__nav-link">Productos</a></li>
@@ -50,7 +52,7 @@
                     <button class="header__hamburger" onclick="toggleMenu()">
                         <i class="fas fa-bars"></i>
                     </button>
-                    <img src="images/workZone-logo-gray.png" alt="Logo WorkZone" class="header__logo">
+                    <img src="/images/workZone-logo-gray.png" alt="Logo WorkZone" class="header__logo">
                     <div class="header__icon-container">
                         <i class="fas fa-heart header__icon"></i>
                         <i class="fas fa-shopping-cart header__icon"></i>
@@ -72,7 +74,7 @@
     </nav>
 </header>
             <!-- Main -->
-            <main>                
+            <main>
                 <section class="carousel">
     <div class="carousel-slide active">
         <img src="images/banner/Banner_Respiratoria.jpg" alt="Protección-Respiratoria">
@@ -103,52 +105,875 @@
         <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
     </div>
 </section>
-                <!-- Section info-cards -->
-                <section class="info-cards">
-                    <article class="info-card">
-                        <header class="info-card__icon">
-                            <i class="fa-solid fa-truck-ramp-box"></i>
+                    <!-- Section info-cards -->
+                    <section class="info-cards">
+                        <article class="info-card">
+                            <header class="info-card__icon">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                            </header>
+                            <div class="info-card__content">
+                                <h3 class="info-card__title">ENVIÓS A TODO EL PAÍS</h3>
+                                <p class="info-card__description">Consultar montos</p>
+                            </div>
+                        </article>
+                        <article class="info-card">
+                            <header class="info-card__icon">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </header>
+                            <div class="info-card__content">
+                                <h3 class="info-card__title">ENVIÓS AMBA 48HS - INTERIOR 72/96HS</h3>
+                                <p class="info-card__description">Envios</p>
+                            </div>
+                        </article>
+                        <article class="info-card">
+                            <header class="info-card__icon">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </header>
+                            <div class="info-card__content">
+                                <h3 class="info-card__title">PAGOS CON</h3>
+                                <p class="info-card__description">Transferencia bancaria y tarjetas</p>
+                            </div>
+                        </article>
+                        <article class="info-card">
+                            <header class="info-card__icon">
+                                <i class="fa-solid fa-award"></i>
+                            </header>
+                            <div class="info-card__content">
+                                <h3 class="info-card__title">GARANTÍA WORKZONE</h3>
+                                <p class="info-card__description">Garantía de calidad, con opción a devolución.</p>
+                            </div>
+                        </article>
+                    </section>
+                    <!-- /Section info-cards -->
+                    <!-- Section products -->
+                    <section class="products" id="products">
+                        <header class="products__header">
+                            <h2 class="products__title">Colección Destacada</h2>
                         </header>
-                        <div class="info-card__content">
-                            <h3 class="info-card__title">ENVIÓS A TODO EL PAÍS</h3>
-                            <p class="info-card__description">Consultar montos</p>
-                        </div>
-                    </article>
-                    <article class="info-card">
-                        <header class="info-card__icon">
-                            <i class="fa-solid fa-truck-fast"></i>
-                        </header>
-                        <div class="info-card__content">
-                            <h3 class="info-card__title">ENVIÓS AMBA 48HS - INTERIOR 72/96HS</h3>
-                            <p class="info-card__description">Envios</p>
-                        </div>
-                    </article>
-                    <article class="info-card">
-                        <header class="info-card__icon">
-                            <i class="fa-regular fa-credit-card"></i>
-                        </header>
-                        <div class="info-card__content">
-                            <h3 class="info-card__title">PAGOS CON</h3>
-                            <p class="info-card__description">Transferencia bancaria y tarjetas</p>
-                        </div>
-                    </article>
-                    <article class="info-card">
-                        <header class="info-card__icon">
-                            <i class="fa-solid fa-award"></i>
-                        </header>
-                        <div class="info-card__content">
-                            <h3 class="info-card__title">GARANTÍA WORKZONE</h3>
-                            <p class="info-card__description">Garantía de calidad, con opción a devolución.</p>
-                        </div>
-                    </article>
-                </section>
-                <!-- /Section info-cards -->
-                <!-- Section products -->
-                <section class="products" id="products">
-                    <header class="products__header">
-                        <h2 class="products__title">Colección Destacada</h2>                        
-                    </header>
-                    <div class="products__grid">
+                        <div class="products__grid">
+                            <div id="multi-item-carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    
+                                        <div class="carousel-item active col-12">
+                                            <div class="row row-cols-5">
+                                                
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/casco_bombero.jpg"
+                                                                    alt="Casco para Bomberos">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Craneana
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Casco para Bomberos
+                                                                </p>
+                                                                <p class="product-card__price">$ 15000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('1')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/anteojos_seguridad.jpg"
+                                                                    alt="Anteojos de Seguridad">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Ocular
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Anteojos de Seguridad
+                                                                </p>
+                                                                <p class="product-card__price">$ 2500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('2')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/protector_auditivo.jpg"
+                                                                    alt="Protector Auditivo de Copa">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Auditiva
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Protector Auditivo de Copa
+                                                                </p>
+                                                                <p class="product-card__price">$ 3500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('3')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/respirador_media_cara.jpg"
+                                                                    alt="Respirador Media Cara">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Respiratoria
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Respirador Media Cara
+                                                                </p>
+                                                                <p class="product-card__price">$ 5000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('4')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/casco_de_altura.jpg"
+                                                                    alt="Casco de Altura">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Craneana
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Casco de Altura
+                                                                </p>
+                                                                <p class="product-card__price">$ 12000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('5')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="carousel-item  col-12">
+                                            <div class="row row-cols-5">
+                                                
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/guantes_proteccion.jpg"
+                                                                    alt="Guantes de Protección">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Manos
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Guantes de Protección
+                                                                </p>
+                                                                <p class="product-card__price">$ 1500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('6')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/botas_seguridad.jpg"
+                                                                    alt="Botas de Seguridad">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Pies
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Botas de Seguridad
+                                                                </p>
+                                                                <p class="product-card__price">$ 6500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('7')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/mascarilla_n95.jpg"
+                                                                    alt="Mascarilla N95">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Respiratoria
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Mascarilla N95
+                                                                </p>
+                                                                <p class="product-card__price">$ 1000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('8')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/gafas_uv.jpg"
+                                                                    alt="Gafas de Protección UV">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Ocular
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Gafas de Protección UV
+                                                                </p>
+                                                                <p class="product-card__price">$ 3000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('9')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/protectores_insercion.jpg"
+                                                                    alt="Protectores Auditivos de Inserción">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Auditiva
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Protectores Auditivos de Inserción
+                                                                </p>
+                                                                <p class="product-card__price">$ 2000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('10')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="carousel-item  col-12">
+                                            <div class="row row-cols-5">
+                                                
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/mascara_facial.jpg"
+                                                                    alt="Máscara Facial">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Facial
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Máscara Facial
+                                                                </p>
+                                                                <p class="product-card__price">$ 4000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('11')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/zapatos_seguridad.jpg"
+                                                                    alt="Zapatos de Seguridad">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Pies
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Zapatos de Seguridad
+                                                                </p>
+                                                                <p class="product-card__price">$ 5500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('12')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/cubrebocas_desechable.jpg"
+                                                                    alt="Cubrebocas Desechable">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Respiratoria
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Cubrebocas Desechable
+                                                                </p>
+                                                                <p class="product-card__price">$ 500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('13')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/guantes_anticorte.jpg"
+                                                                    alt="Guantes Anticorte">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Manos
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Guantes Anticorte
+                                                                </p>
+                                                                <p class="product-card__price">$ 2500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('14')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/arnes_seguridad.jpg"
+                                                                    alt="Arnés de Seguridad">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Craneana
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Arnés de Seguridad
+                                                                </p>
+                                                                <p class="product-card__price">$ 20000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('15')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="carousel-item  col-12">
+                                            <div class="row row-cols-5">
+                                                
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/gafas_antivaho.jpg"
+                                                                    alt="Gafas Antivaho">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Ocular
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Gafas Antivaho
+                                                                </p>
+                                                                <p class="product-card__price">$ 2800
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('16')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/protector_auditivo_electronico.jpg"
+                                                                    alt="Protector Auditivo Electrónico">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Auditiva
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Protector Auditivo Electrónico
+                                                                </p>
+                                                                <p class="product-card__price">$ 5500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('17')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/respirador_full_face.jpg"
+                                                                    alt="Respirador Full Face">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Respiratoria
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Respirador Full Face
+                                                                </p>
+                                                                <p class="product-card__price">$ 18000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('18')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/botas_dieletricas.jpg"
+                                                                    alt="Botas Dieléctricas">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Pies
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Botas Dieléctricas
+                                                                </p>
+                                                                <p class="product-card__price">$ 11000
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('19')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/guantes_termicos.jpg"
+                                                                    alt="Guantes Térmicos">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Manos
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Guantes Térmicos
+                                                                </p>
+                                                                <p class="product-card__price">$ 3500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('20')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="carousel-item  col-12">
+                                            <div class="row row-cols-5">
+                                                
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/casco_con_visor.jpg"
+                                                                    alt="Casco con Visor">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Craneana
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Casco con Visor
+                                                                </p>
+                                                                <p class="product-card__price">$ 14500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('21')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/protector_cuello_ignifugo.jpg"
+                                                                    alt="Protector de Cuello Ignífugo">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Craneana
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Protector de Cuello Ignífugo
+                                                                </p>
+                                                                <p class="product-card__price">$ 4500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('22')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/gafas_soldador_auto.jpg"
+                                                                    alt="Gafas de Soldador Automáticas">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Ocular
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Gafas de Soldador Automáticas
+                                                                </p>
+                                                                <p class="product-card__price">$ 9200
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('23')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/respirador_filtro_dual.jpg"
+                                                                    alt="Respirador con Filtro Dual">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Respiratoria
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Respirador con Filtro Dual
+                                                                </p>
+                                                                <p class="product-card__price">$ 14500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('24')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/cubrecalzado_seguridad.jpg"
+                                                                    alt="Cubrecalzado de Seguridad">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Pies
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Cubrecalzado de Seguridad
+                                                                </p>
+                                                                <p class="product-card__price">$ 2800
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('25')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="carousel-item  col-12">
+                                            <div class="row row-cols-5">
+                                                
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/guantes_latex_industrial.jpg"
+                                                                    alt="Guantes de Látex Industrial">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Manos
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Guantes de Látex Industrial
+                                                                </p>
+                                                                <p class="product-card__price">$ 1500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('26')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/casco_rescate.jpg"
+                                                                    alt="Casco de Rescate">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Craneana
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Casco de Rescate
+                                                                </p>
+                                                                <p class="product-card__price">$ 12500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('27')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/protectores_auditivos_almohadilla.jpg"
+                                                                    alt="Protectores Auditivos Almohadillados">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Auditiva
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Protectores Auditivos Almohadillados
+                                                                </p>
+                                                                <p class="product-card__price">$ 3200
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('28')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/respirador_carbon_activado.jpg"
+                                                                    alt="Respirador de Carbón Activado">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección Respiratoria
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Respirador de Carbón Activado
+                                                                </p>
+                                                                <p class="product-card__price">$ 17500
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('29')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <article class="card product-card">
+                                                            <div class="product-card__image-container">
+                                                                <img class="product-card__image"
+                                                                    src="/images/products/zapatos_fibra_vidrio.jpg"
+                                                                    alt="Zapatos con Puntera de Fibra de Vidrio">
+                                                                <i
+                                                                    class="fa-regular fa-heart product-card__favorite-icon"></i>
+                                                            </div>
+                                                            <div class="product-card__info">
+                                                                <p class="product-card__category">
+                                                                    Protección de Pies
+                                                                </p>
+                                                                <p class="product-card__name">
+                                                                    Zapatos con Puntera de Fibra de Vidrio
+                                                                </p>
+                                                                <p class="product-card__price">$ 8900
+                                                                </p>
+                                                                <button
+                                                                    class="product-card__add-button btn btn--primary"
+                                                                    onclick="addProductCart('30')">AÑADIR
+                                                                    AL CARRITO</button>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                </div>
+                            </div>
+
+                            <!-- 
                         <article class="product-card">
                             <div class="product-card__image-container">
                                 <img src="images/products/casco_bombero.png" alt="Producto" class="product-card__image">
@@ -209,233 +1034,263 @@
                                 <button class="product-card__add-button btn btn--primary">AÑADIR AL CARRITO</button>
                             </div>
                         </article>  
-                    </div>
-                    <button class="products__view-more btn btn--secondary">VER MÁS</button>
-                </section>
-                <!-- /Section products -->
-                <!-- Section categories -->
-                <section class="categories" id="categories">
-                    <header class="categories__header">
-                        <h2 class="categories__title">Principales Categorías</h2>                         
-                    </header>
-                    <div class="categories__grid">
-                        <article class="category-card">
-                            <div class="category-card__image-container">
-                                <img src="images/categories/craneana.jpg" alt="Categoría" class="category-card__image">
-                                <p class="category-card__name">CRANEANA</p>
-                            </div>
-                        </article>  
-                        <article class="category-card">
-                            <div class="category-card__image-container">
-                                <img src="images/categories/auditiva.jpg" alt="Categoría" class="category-card__image">
-                                <p class="category-card__name">AUDITIVA</p>
-                            </div>
-                        </article>  
-                        <article class="category-card">
-                            <div class="category-card__image-container">
-                                <img src="images/categories/respiratoria.png" alt="Categoría" class="category-card__image">
-                                <p class="category-card__name">RESPIRATORIA</p>
-                            </div>
-                        </article>  
-                        <article class="category-card">
-                            <div class="category-card__image-container">
-                                <img src="images/categories/ocular.jpg" alt="Categoría" class="category-card__image">
-                                <p class="category-card__name">OCULAR</p>
-                            </div>
-                        </article>  
-                        <article class="category-card">
-                            <div class="category-card__image-container">
-                                <img src="images/categories/protector-facial.jpg" alt="Categoría" class="category-card__image">
-                                <p class="category-card__name">FACIAL</p>
-                            </div>
-                        </article>  
-                    </div>
-                    <button class="categories__view-more btn btn--secondary">VER MÁS</button>
-                </section>
-                <!-- /Section categories -->
-                <!-- Section about -->   
-                <section class="about" id="about">
-                    <header class="about__header">
-                        <h2 class="about__title">¿Por qué Nosotros?</h2>
-                    </header>
-                    <div class="about__content">
-                        <p class="about__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus exercitationem mollitia veniam!
-                        </p>
-                        <button type="submit" class="about__submit btn btn--secondary">VER MÁS</button>
-                    </div>
-                </section> 
-                <!-- /Section about -->
-                <!-- Section review -->               
-                <section class="reviews" id="reviews">
-                    <header class="reviews__header">
-                        <h2 class="reviews__title">Reseñas</h2>
-                    </header>
-                    <div class="reviews__grid">
-                        <article class="review__card">
-                            <div class="review__content">
-                                <p class="review__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at repellat.
-                                </p>
-                            </div>
-                            <div class="review__footer">
-                                <img src="images/users/male-user1.jpg" alt="Foto del revisor" class="review__avatar">
-                                <div class="review__info">
-                                    <p class="review__name">Nombre de usuario</p>
-                                    <p class="review__description">Número de días de comentario</p>
-                                    <div class="review__social-icons">                                        
-                                        <i class="fa-brands fa-facebook"></i>
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="review__card">
-                            <div class="review__content">
-                                <p class="review__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at repellat.
-                                </p>
-                            </div>
-                            <div class="review__footer">
-                                <img src="images/users/female-user2.jpg" alt="Foto del revisor" class="review__avatar">
-                                <div class="review__info">
-                                    <p class="review__name">Nombre de usuario</p>
-                                    <p class="review__description">Número de días de comentario</p>
-                                    <div class="review__social-icons">                                        
-                                        <i class="fa-brands fa-facebook"></i>                                    
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="review__card">
-                            <div class="review__content">
-                                <p class="review__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at repellat.
-                                </p>
-                            </div>
-                            <div class="review__footer">
-                                <img src="images/users/male-user2.jpg" alt="Foto del revisor" class="review__avatar">
-                                <div class="review__info">
-                                    <p class="review__name">Nombre de usuario</p>
-                                    <p class="review__description">Número de días de comentario</p>
-                                    <div class="review__social-icons">                                        
-                                        <i class="fa-brands fa-facebook"></i>                                    
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="review__card">
-                            <div class="review__content">
-                                <p class="review__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at repellat.
-                                </p>
-                            </div>
-                            <div class="review__footer">
-                                <img src="images/users/female-user1.jpg" alt="Foto del revisor" class="review__avatar">
-                                <div class="review__info">
-                                    <p class="review__name">Nombre de usuario</p>
-                                    <p class="review__description">Número de días de comentario</p>
-                                    <div class="review__social-icons">                                        
-                                        <i class="fa-brands fa-facebook"></i>                                    
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-                <!-- /Section review -->   
-                <!-- Section contact -->
-                <section class="contact" id="contact">
-                    <header class="contact__header">
-                        <h2 class="contact__title">Contacto</h2>
-                    </header>
-                    <div class="contact__grid">
-                        <!-- Formulario de contacto -->
-                        <form class="contact__form" action="https://formspree.io/f/xovqebdq" method="POST">
-                            <div class="contact__form-group contact__form-group--fullname">
-                                <div class="contact__form-group">
-                                    <label class="label label--form" for="name">Nombre:</label>
-                                    <input class="input" type="text" id="name" name="name" placeholder="Introduzca su nombre" required>
-                                </div>
-                                <div class="contact__form-group ">
-                                    <label class="label label--form" for="lastname">Apellido:</label>
-                                    <input class="input" type="text" id="lastname" name="lastname" placeholder="Introduzca su apellido" required>
-                                </div>
-                            </div>
-                            <div class="contact__form-group">
-                                <label class="label label--form " for="email">Correo Electrónico:</label>
-                                <input class="input" type="email" id="email" name="email" placeholder="Introduzca su correo electrónico" required>
-                            </div>
-                            <div class="contact__form-group">
-                                <label class="label label--form" for="message">Mensaje:</label>
-                                <textarea class="input" id="message" name="message" placeholder="Escriba su mensaje aquí" required></textarea>
-                            </div>
-                            <button type="submit" class="contact__submit btn btn--primary">ENVIAR MENSAJE</button>
-                        </form>
 
-                        <!-- Información adicional de contacto -->
-                        <div class="contact__info">
-                            <article class="contact__info-item">
-                                <i class="fa-solid fa-envelope"></i>
-                                <div class="contact__info-content">
-                                    <h3 class="text--medium">Email</h3>
-                                    <p class="text--small">Nuestro equipo está para ayudarte.</p>
-                                    <p class="text--small"><a href="mailto:hello@workzone.com" class="contact__email-link">hello@workzone.com</a></p>                                    
+ -->
+                        </div>
+                        <button class="products__view-more btn btn--secondary">VER MÁS</button>
+                    </section>
+                    <!-- /Section products -->
+                    <!-- Section categories -->
+                    <section class="categories" id="categories">
+                        <header class="categories__header">
+                            <h2 class="categories__title">Principales Categorías</h2>
+                        </header>
+                        <div class="categories__grid">
+                            <article class="category-card">
+                                <div class="category-card__image-container">
+                                    <img src="images/categories/craneana.jpg" alt="Categoría"
+                                        class="category-card__image">
+                                    <p class="category-card__name">CRANEANA</p>
                                 </div>
                             </article>
-                            <article class="contact__info-item">
-                                <i class="fa-solid fa-comments"></i>
-                                <div class="contact__info-content">
-                                    <h3 class="text--medium">Chat en vivo</h3>
-                                    <p class="text--small">¿Necesitas asistencia inmediata?</p>
-                                    <p class="text--small"><a href="https://wa.me/5491156092589" target="_blank" class="contact__chat-link">Iniciar nuevo chat</a></p>                                    
+                            <article class="category-card">
+                                <div class="category-card__image-container">
+                                    <img src="images/categories/auditiva.jpg" alt="Categoría"
+                                        class="category-card__image">
+                                    <p class="category-card__name">AUDITIVA</p>
                                 </div>
                             </article>
-                            <article class="contact__info-item">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div class="contact__info-content">
-                                    <h3 class="text--medium">Dirección</h3>
-                                    <p class="text--small">Nuestra oficina se encuentra ubicada en:</p>
-                                    <p class="text--small">123, Zuviria, CABA</p>                                    
+                            <article class="category-card">
+                                <div class="category-card__image-container">
+                                    <img src="images/categories/respiratoria.png" alt="Categoría"
+                                        class="category-card__image">
+                                    <p class="category-card__name">RESPIRATORIA</p>
                                 </div>
                             </article>
-                            <article class="contact__info-item">
-                                <i class="fa-solid fa-phone"></i>
-                                <div class="contact__info-content">
-                                    <h3 class="text--medium">Teléfono</h3>
-                                    <p class="text--small">Atención de Lunes a Viernes, 8 am - 5 pm</p>
-                                    <p class="text--small">(+54) 1156092589</p>
+                            <article class="category-card">
+                                <div class="category-card__image-container">
+                                    <img src="images/categories/ocular.jpg" alt="Categoría"
+                                        class="category-card__image">
+                                    <p class="category-card__name">OCULAR</p>
+                                </div>
+                            </article>
+                            <article class="category-card">
+                                <div class="category-card__image-container">
+                                    <img src="images/categories/protector-facial.jpg" alt="Categoría"
+                                        class="category-card__image">
+                                    <p class="category-card__name">FACIAL</p>
                                 </div>
                             </article>
                         </div>
-                    </div>
-                </section>
-                <!-- /Section contact -->
-                <!-- Section newsletter -->
-                <section class="newsletter" id="newsletter">
-                    <div class="newsletter__header">
-                        <h2 class="newsletter__title">Suscríbete a nuestro Newsletter</h2>                                       
-                    </div>
-                    <div class="newsletter__form-container">
-                        <form class="newsletter__form" action="">
-                            <input type="email" id="emailNewsLetter" name="emailNewsLetter" class="newsletter__input input" placeholder="Introduzca su correo electrónico" required>
-                            <button type="submit" class="newsletter__submit btn btn--secondary">SUSCRÍBETE</button>
-                        </form>
-                    </div>
-                </section>
-                <!-- /Section newsletter -->
+                        <button class="categories__view-more btn btn--secondary">VER MÁS</button>
+                    </section>
+                    <!-- /Section categories -->
+                    <!-- Section about -->
+                    <section class="about" id="about">
+                        <header class="about__header">
+                            <h2 class="about__title">¿Por qué Nosotros?</h2>
+                        </header>
+                        <div class="about__content">
+                            <p class="about__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates quo
+                                nemo neque nesciunt similique minus itaque impedit eveniet blanditiis dicta est nam in
+                                perferendis tenetur, error eum dolore doloremque, quasi pariatur sint natus
+                                exercitationem mollitia veniam!
+                            </p>
+                            <button type="submit" class="about__submit btn btn--secondary">VER MÁS</button>
+                        </div>
+                    </section>
+                    <!-- /Section about -->
+                    <!-- Section review -->
+                    <section class="reviews" id="reviews">
+                        <header class="reviews__header">
+                            <h2 class="reviews__title">Reseñas</h2>
+                        </header>
+                        <div class="reviews__grid">
+                            <article class="review__card">
+                                <div class="review__content">
+                                    <p class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur
+                                        exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at
+                                        repellat.
+                                    </p>
+                                </div>
+                                <div class="review__footer">
+                                    <img src="images/users/male-user1.jpg" alt="Foto del revisor"
+                                        class="review__avatar">
+                                    <div class="review__info">
+                                        <p class="review__name">Nombre de usuario</p>
+                                        <p class="review__description">Número de días de comentario</p>
+                                        <div class="review__social-icons">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="review__card">
+                                <div class="review__content">
+                                    <p class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur
+                                        exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at
+                                        repellat.
+                                    </p>
+                                </div>
+                                <div class="review__footer">
+                                    <img src="images/users/female-user2.jpg" alt="Foto del revisor"
+                                        class="review__avatar">
+                                    <div class="review__info">
+                                        <p class="review__name">Nombre de usuario</p>
+                                        <p class="review__description">Número de días de comentario</p>
+                                        <div class="review__social-icons">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="review__card">
+                                <div class="review__content">
+                                    <p class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur
+                                        exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at
+                                        repellat.
+                                    </p>
+                                </div>
+                                <div class="review__footer">
+                                    <img src="images/users/male-user2.jpg" alt="Foto del revisor"
+                                        class="review__avatar">
+                                    <div class="review__info">
+                                        <p class="review__name">Nombre de usuario</p>
+                                        <p class="review__description">Número de días de comentario</p>
+                                        <div class="review__social-icons">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="review__card">
+                                <div class="review__content">
+                                    <p class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur
+                                        exercitationem reprehenderit culpa perspiciatis ab maiores commodi, pariatur at
+                                        repellat.
+                                    </p>
+                                </div>
+                                <div class="review__footer">
+                                    <img src="images/users/female-user1.jpg" alt="Foto del revisor"
+                                        class="review__avatar">
+                                    <div class="review__info">
+                                        <p class="review__name">Nombre de usuario</p>
+                                        <p class="review__description">Número de días de comentario</p>
+                                        <div class="review__social-icons">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <!-- /Section review -->
+                    <!-- Section contact -->
+                    <section class="contact" id="contact">
+                        <header class="contact__header">
+                            <h2 class="contact__title">Contacto</h2>
+                        </header>
+                        <div class="contact__grid">
+                            <!-- Formulario de contacto -->
+                            <form class="contact__form" action="https://formspree.io/f/xovqebdq" method="POST">
+                                <div class="contact__form-group contact__form-group--fullname">
+                                    <div class="contact__form-group">
+                                        <label class="label label--form" for="name">Nombre:</label>
+                                        <input class="input" type="text" id="name" name="name"
+                                            placeholder="Introduzca su nombre" required>
+                                    </div>
+                                    <div class="contact__form-group ">
+                                        <label class="label label--form" for="lastname">Apellido:</label>
+                                        <input class="input" type="text" id="lastname" name="lastname"
+                                            placeholder="Introduzca su apellido" required>
+                                    </div>
+                                </div>
+                                <div class="contact__form-group">
+                                    <label class="label label--form " for="email">Correo Electrónico:</label>
+                                    <input class="input" type="email" id="email" name="email"
+                                        placeholder="Introduzca su correo electrónico" required>
+                                </div>
+                                <div class="contact__form-group">
+                                    <label class="label label--form" for="message">Mensaje:</label>
+                                    <textarea class="input" id="message" name="message"
+                                        placeholder="Escriba su mensaje aquí" required></textarea>
+                                </div>
+                                <button type="submit" class="contact__submit btn btn--primary">ENVIAR MENSAJE</button>
+                            </form>
+
+                            <!-- Información adicional de contacto -->
+                            <div class="contact__info">
+                                <article class="contact__info-item">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div class="contact__info-content">
+                                        <h3 class="text--medium">Email</h3>
+                                        <p class="text--small">Nuestro equipo está para ayudarte.</p>
+                                        <p class="text--small"><a href="mailto:hello@workzone.com"
+                                                class="contact__email-link">hello@workzone.com</a></p>
+                                    </div>
+                                </article>
+                                <article class="contact__info-item">
+                                    <i class="fa-solid fa-comments"></i>
+                                    <div class="contact__info-content">
+                                        <h3 class="text--medium">Chat en vivo</h3>
+                                        <p class="text--small">¿Necesitas asistencia inmediata?</p>
+                                        <p class="text--small"><a href="https://wa.me/5491156092589" target="_blank"
+                                                class="contact__chat-link">Iniciar nuevo chat</a></p>
+                                    </div>
+                                </article>
+                                <article class="contact__info-item">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div class="contact__info-content">
+                                        <h3 class="text--medium">Dirección</h3>
+                                        <p class="text--small">Nuestra oficina se encuentra ubicada en:</p>
+                                        <p class="text--small">123, Zuviria, CABA</p>
+                                    </div>
+                                </article>
+                                <article class="contact__info-item">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <div class="contact__info-content">
+                                        <h3 class="text--medium">Teléfono</h3>
+                                        <p class="text--small">Atención de Lunes a Viernes, 8 am - 5 pm</p>
+                                        <p class="text--small">(+54) 1156092589</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Section contact -->
+                    <!-- Section newsletter -->
+                    <section class="newsletter" id="newsletter">
+                        <div class="newsletter__header">
+                            <h2 class="newsletter__title">Suscríbete a nuestro Newsletter</h2>
+                        </div>
+                        <div class="newsletter__form-container">
+                            <form class="newsletter__form" action="">
+                                <input type="email" id="emailNewsLetter" name="emailNewsLetter"
+                                    class="newsletter__input input" placeholder="Introduzca su correo electrónico"
+                                    required>
+                                <button type="submit" class="newsletter__submit btn btn--secondary">SUSCRÍBETE</button>
+                            </form>
+                        </div>
+                    </section>
+                    <!-- /Section newsletter -->
             </main>
             <footer class="footer">
     <div class="footer__container">
         <div class="footer__column footer__column--about">
-            <img src="images/workZone-logo-white.png" alt="Logo de la empresa" class="footer__logo">
+            <img src="/images/workZone-logo-white.png" alt="Logo de la empresa" class="footer__logo">
             <p class="footer__text">Proporcionamos equipos y vestimenta de seguridad industrial de la más alta calidad para mantener la seguridad de tu equipo de trabajo.</p>
         </div>
 
@@ -487,13 +1342,13 @@
         </div>
     </div>
 </footer>
-            <!-- Icon whatsapp -->
-            <a href="https://wa.me/5491156092589" target="_blank" class="whatsapp-icon">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <!-- /Icon whatsapp -->
-            <!-- Scripts -->
-            <script>
+                <!-- Icon whatsapp -->
+                <a href="https://wa.me/5491156092589" target="_blank" class="whatsapp-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <!-- /Icon whatsapp -->
+                <!-- Scripts -->
+                <script>
     function toggleMenu() {
         const navList = document.getElementById("header-nav-list");
         navList.classList.toggle("active");
@@ -531,6 +1386,9 @@
     // Muestra el primer slide al cargar
     showSlide(currentSlide);
 </script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 
 </html>
