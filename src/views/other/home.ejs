@@ -65,7 +65,7 @@
                                                         <article class="card product-card">
                                                             <div class="product-card__image-container">
                                                                 <img class="product-card__image"
-                                                                    src="/images/products/<%= products[j].image %>"
+                                                                    src="./images/products/<%= products[j].image %>"
                                                                     alt="<%= products[j].name %>">
                                                                 <i
                                                                     class="fa-regular fa-heart product-card__favorite-icon"></i>
@@ -80,10 +80,20 @@
                                                                 <p class="product-card__price">$ <%= products[j].price
                                                                         %>
                                                                 </p>
-                                                                <button
+                                                                <div class="d-flex justify-content-around gap-2">
+                                                                    <a href="/productos/detalle/<%= products[j].id %>"
+                                                                        class="btn btn--secondary w-100">VER MÁS</a>
+                                                                    <button class="btn btn--primary "
+                                                                        type="button"
+                                                                        onclick="addProductCart('<%= products[j].id %>')">
+                                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                                    </button>
+                                                                </div>
+
+                                                                <!-- <button
                                                                     class="product-card__add-button btn btn--primary"
                                                                     onclick="addProductCart('<%= products[j].id %>')">AÑADIR
-                                                                    AL CARRITO</button>
+                                                                    AL CARRITO</button> -->
                                                             </div>
                                                         </article>
                                                     </div>
@@ -392,20 +402,8 @@
                         </div>
                     </section>
                     <!-- /Section contact -->
-                    <!-- Section newsletter -->
-                    <section class="newsletter" id="newsletter">
-                        <div class="newsletter__header">
-                            <h2 class="newsletter__title">Suscríbete a nuestro Newsletter</h2>
-                        </div>
-                        <div class="newsletter__form-container">
-                            <form class="newsletter__form" action="">
-                                <input type="email" id="emailNewsLetter" name="emailNewsLetter"
-                                    class="newsletter__input input" placeholder="Introduzca su correo electrónico"
-                                    required>
-                                <button type="submit" class="newsletter__submit btn btn--secondary">SUSCRÍBETE</button>
-                            </form>
-                        </div>
-                    </section>
+                     <!-- Section newsletter -->
+                    <%- include("../partials/newsletter") %>
                     <!-- /Section newsletter -->
             </main>
             <%- include("../partials/footer") %>

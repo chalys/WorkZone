@@ -8,44 +8,50 @@ var logger = require('morgan');
 
 var app = express();
 
-// view engine setup
-// ************ Template Engine - (don't touch) ************
+// ************ Configuración del motor de plantillas ************
 app.set('view engine', 'ejs');
 app.set('views',[
   path.join(__dirname, '/views'),
-  path.join(__dirname, '/views/other')
+  path.join(__dirname, '/views/other'),
+  path.join(__dirname, '/views/product')
+  
 ]);
-// ************ Define la ubicación de la carpeta de las vistas ************
-
-// ************ Route System require and use() ************
-const otherRouter = require('./routes/other.routes')
 // ************ 
 
+// ************ Middleware global ************
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../public')));
-
-
-// ************ Enrutadores ************
-app.use('/', otherRouter);
+app.use(express.static(path.join(__dirname, "../public")));
 // ************ 
 
-// catch 404 and forward to error handler
+// ************ Importación de rutas ************
+const otherRouter = require('./routes/other.routes');
+const productRouter = require('./routes/product.routes');
+// ************ 
+
+// ************ Uso de enrutadores ************
+app.use('/', otherRouter); // Ruta principal
+app.use('/productos', productRouter); // Ruta de productos
+// ************ 
+
+// ************ Manejo de errores 404 ************
 app.use(function(req, res, next) {
   next(createError(404));
 });
+// ************ 
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
+// ************ Middleware para manejo de errores ************
+app.use((err, req, res, next) => {
+  // Configuración de variables locales para errores
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
+  // Renderiza la página de error
   res.status(err.status || 500);
-  res.render('other/error');
+  res.render('other/error'); // Asegúrate de que esta vista exista
 });
 
+// ************ Exportación del módulo ************
 module.exports = app;

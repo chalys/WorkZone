@@ -56,33 +56,33 @@ a {
 }
 
 .btn--primary {
-    background-color: var(--yellow);
-    color: var(--darkgray);
+    background-color: var(--yellow)!important;
+    color: var(--darkgray)!important;
 }
 
 .btn--primary:hover {
-    background-color: var(--darkyellow);
-    color: var(--darkgray);
+    background-color: var(--darkyellow)!important;
+    color: var(--darkgray)!important;
 }
 
 .btn--secondary {
-    background-color: var(--darkgray);    
-    color: var(--white);
+    background-color: var(--darkgray)!important;    
+    color: var(--white)!important;
 }
 
 .btn--secondary:hover {
-    background-color: var(--gray);    
-    color: var(--white);
+    background-color: var(--gray)!important;    
+    color: var(--white)!important;
 }
 
 .btn--tertiary {
-    background-color: var(--darkgray);
-    color: var(--white);
+    background-color: var(--darkgray)!important;
+    color: var(--white)!important;
 }
 
 .btn--tertiary:hover {
-    background-color: var(--white);
-    border: 1px solid var(--darkgray);
+    background-color: var(--white)!important;
+    border: 1px solid var(--darkgray)!important;
     color: var(--darkgray);
 }
 

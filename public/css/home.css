@@ -129,7 +129,7 @@
 }
 
 .newsletter__submit {
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0!important;
     width: 30%;
 }
 

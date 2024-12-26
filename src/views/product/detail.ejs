@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head -->
+<%- include("../partials/head",{title:"Detalle de producto"}) %>
+
+  <body>
+    <!-- Header -->
+    <%- include("../partials/header") %>
+      <main>
+        <section class="container my-5 px-3">
+
+          <div class="row">
+            <!-- Imagen del producto -->
+            <div class="col-md-6 mb-4">
+              <figure>
+                <img src="/images/products/<%= product.image %>" alt="<%= product.name %>" class="img-fluid rounded">
+              </figure>
+            </div>
+
+            <!-- Detalles del producto -->
+            <div class="col-md-6">
+              <h1 class="mb-3 text-uppercase text-dark">
+                <%= product.name %>
+              </h1>
+              <p class="h4 product-card__price mb-3">$ <%= product.price %>
+              </p>
+
+              <div class="mb-3">
+                <p><strong>Disponibilidad:</strong> <span class="text-muted">
+                    <%= product.availability %>
+                  </span></p>
+                <p><strong>SKU:</strong> <span class="text-muted">
+                    <%= product.SKU %>
+                  </span></p>
+              </div>
+
+              <section>
+                <p><strong>Descripción:</strong> <span class="text-muted">
+                    <%= product.description %>
+                  </span></p>
+              </section>
+              <div class="mb-3">
+                <p><i class="fa-solid fa-download"></i><a href="">FICHA TÉCNICA</a>&nbsp;&nbsp;<i
+                    class="fa-solid fa-download"></i><a href="">CERTIFICACIONES</a></p>
+              </div>
+              <!-- Colores disponibles -->
+              <div class="colors-container mt-4">
+                <p><strong>Colores disponibles:</strong></p>
+                <div class="d-flex gap-2">
+                  <% product.colors.forEach(function(color) { %>
+                    <div class="color-circle" style="background-color: <%= color %>;"></div>
+                    <% }); %>
+                </div>
+              </div>
+              <!-- Botones de acción -->
+              <div class="d-flex gap-3 mt-4">
+                <a href="/productos/lista-productos" class="btn btn--primary w-100">SEGUIR MIRANDO</a>
+                <button type="button" class="btn btn--secondary w-100"
+                  onclick="addProductCart('<%= product.id %>')">AGREGAR AL CARRITO</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <%- include("../partials/footer") %>
+        <!-- Icon whatsapp -->
+        <a href="https://wa.me/5491156092589" target="_blank" class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- /Icon whatsapp -->
+        <!-- Scripts -->
+        <%- include("../partials/scripts") %>
+  </body>
+
+</html>

@@ -1,0 +1,14 @@
+.colors-container {
+    display: flex;
+    gap: 10px;
+    /* Espaciado entre los círculos */
+}
+
+.color-circle {
+    width: 20px;
+    /* Ancho del círculo */
+    height: 20px;
+    /* Alto del círculo */
+    border-radius: 50%;
+    /* Hace que el div sea un círculo */
+}
