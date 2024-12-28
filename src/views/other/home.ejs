@@ -83,13 +83,12 @@
                                                                 <div class="d-flex justify-content-around gap-2">
                                                                     <a href="/productos/detalle/<%= products[j].id %>"
                                                                         class="btn btn--secondary w-100">VER MÁS</a>
-                                                                    <button class="btn btn--primary "
-                                                                        type="button"
+                                                                    <button class="btn btn--primary " type="button"
                                                                         onclick="addProductCart('<%= products[j].id %>')">
                                                                         <i class="fa-solid fa-cart-shopping"></i>
                                                                     </button>
                                                                 </div>
-
+                                                                
                                                                 <!-- <button
                                                                     class="product-card__add-button btn btn--primary"
                                                                     onclick="addProductCart('<%= products[j].id %>')">AÑADIR
@@ -402,9 +401,9 @@
                         </div>
                     </section>
                     <!-- /Section contact -->
-                     <!-- Section newsletter -->
+                    <!-- Section newsletter -->
                     <%- include("../partials/newsletter") %>
-                    <!-- /Section newsletter -->
+                        <!-- /Section newsletter -->
             </main>
             <%- include("../partials/footer") %>
                 <!-- Icon whatsapp -->
@@ -414,6 +413,9 @@
                 <!-- /Icon whatsapp -->
                 <!-- Scripts -->
                 <%- include("../partials/scripts") %>
+                    <!-- /Scripts -->
+
+                    
     </body>
 
 </html>

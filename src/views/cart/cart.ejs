@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head -->
+<%- include("../partials/head",{title:"Detalle de producto"}) %>
+
+    <body>
+        <!-- Header -->
+        <%- include("../partials/header") %>
+        <main>
+            <div class="cart">
+                <h1>Carrito de Compras</h1>
+                <ul id="cart-list"></ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+        </main>
+
+
+        <!-- Footer -->
+    <%- include("../partials/footer") %>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /*const products = JSON.parse(localStorage.getItem('products')) || [];*/
+            const products = <%- products %>; // Productos pasados desde el servidor
+            console.log(products);
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            console.log(cart);
+            const cartList = document.getElementById('cart-list');
+            console.log(cartList);
+            const cartTotal = document.getElementById('cart-total');
+            console.log(cartTotal);
+
+            function renderCart() {
+                cartList.innerHTML = '';
+                let total = 0;
+    
+                cart.forEach(item => {
+                    const product = products.find(p => p.id === item.id);
+                    if (product) {
+                        total += product.price * item.quantity;
+                        cartList.innerHTML += `
+                            <li>
+                                ${product.name} - $${product.price.toFixed(2)} x ${item.quantity}
+                                <button onclick="removeProductCart('${product.id}')">Eliminar</button>
+                                <button onclick="updateQuantity('${product.id}', ${item.quantity + 1})">+</button>
+                                <button onclick="updateQuantity('${product.id}', ${item.quantity - 1})">-</button>
+                            </li>`;
+                    }
+                });
+    
+                cartTotal.textContent = total.toFixed(2);
+            }
+    
+            renderCart();
+    
+            window.removeProductCart = (productId) => {
+                cart = cart.filter(item => item.id !== productId);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                renderCart();
+            };
+    
+            window.updateQuantity = (productId, quantity) => {
+                cart = cart.map(item => {
+                    if (item.id === productId) {
+                        item.quantity = Math.max(1, quantity);
+                    }
+                    return item;
+                });
+                localStorage.setItem('cart', JSON.stringify(cart));
+                renderCart();
+            };
+        });
+    </script>
+
+</body>
+
+</html>

@@ -13,8 +13,8 @@ app.set('view engine', 'ejs');
 app.set('views',[
   path.join(__dirname, '/views'),
   path.join(__dirname, '/views/other'),
-  path.join(__dirname, '/views/product')
-  
+  path.join(__dirname, '/views/product'),
+  path.join(__dirname, '/views/cart')  
 ]);
 // ************ 
 
@@ -29,11 +29,13 @@ app.use(express.static(path.join(__dirname, "../public")));
 // ************ Importación de rutas ************
 const otherRouter = require('./routes/other.routes');
 const productRouter = require('./routes/product.routes');
+const cartRouter = require('./routes/cart.routes');
 // ************ 
 
 // ************ Uso de enrutadores ************
 app.use('/', otherRouter); // Ruta principal
 app.use('/productos', productRouter); // Ruta de productos
+app.use('/carrito-compra', cartRouter);
 // ************ 
 
 // ************ Manejo de errores 404 ************

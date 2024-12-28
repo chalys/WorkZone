@@ -13,14 +13,18 @@ function addProductCart(productId) {
         cart.push({ id: productId, quantity: 1 });
     }
     saveCart();
-    alert("Producto añadido al carrito");
+
+    // Mostrar alerta con Toastr
+    toastr.success('Producto añadido al carrito', '¡Éxito!');
 }
 
 // Eliminar producto del carrito
 function removeProductCart(productId) {
     cart = cart.filter(item => item.id !== productId);
     saveCart();
-    alert("Producto eliminado del carrito");
+    
+    // Mostrar mensaje de eliminación con Toastr
+    toastr.warning('Producto eliminado del carrito', 'Aviso');
 }
 
 // Cambiar cantidad de producto
