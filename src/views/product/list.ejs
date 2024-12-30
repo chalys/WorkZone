@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head -->
+<%- include("../partials/head",{title:"Lista de productos"}) %>
+
+    <body>
+        <!-- Header -->
+        <%- include("../partials/header") %>
+            <main>
+                <section class="container my-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="my-4 text-center">Lista de Productos</h1>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-12 d-flex justify-content-end">
+                            <div class="d-flex align-items-center gap-3">
+                                <span>Mostrar</span>
+                                <select class="form-select form-select-md" onchange="changePageSize(this.value)">
+                                    <option value="8">8</option>
+                                    <option value="16">16</option>
+                                    <option value="24">24</option>
+                                    <option value="48">48</option>
+                                    <option value="100">100</option>
+                                </select>
+                                <span>registros</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lista de productos -->
+                    <div id="product-list"
+                        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4">
+                        <!-- Los productos se cargarán aquí -->
+                    </div>
+
+                    <!-- Paginación -->
+                    <nav aria-label="Página de productos">
+                        <ul id="pagination" class="pagination justify-content-end my-4">
+                            <!-- Los botones de paginación se generarán aquí -->
+                        </ul>
+                    </nav>
+                </section>
+            </main>
+            <script>
+                const products = <%- products %>;
+            </script>
+            <!-- Footer -->
+            <%- include("../partials/footer") %>
+                <!-- Icon whatsapp -->
+                <a href="https://wa.me/5491156092589" target="_blank" class="whatsapp-icon"><i
+                        class="fab fa-whatsapp"></i></a>
+                <!-- Scripts -->
+                <%- include("../partials/scripts") %>
+    </body>
+
+</html>
