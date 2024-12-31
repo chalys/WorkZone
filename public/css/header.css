@@ -61,9 +61,9 @@
 
 .header__search-input {
   flex: 1;
-  padding: 8px;
+  padding: 8px 12px!important;
   border: 1px solid var(--lightgray);
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px!important;;
 }
 
 .header__search-button {
@@ -80,6 +80,8 @@
   align-items: center;
   justify-content: flex-end;
   width: 10%;
+
+  
 }
 
 .header__icon {
@@ -122,6 +124,7 @@
   cursor: pointer;
   font-size: 24px;
 }
+
 
 @media (max-width: 1023px) {
   .header__navbar {
