@@ -1,109 +1,143 @@
 <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <!-- Primera fila (Mobile y Tableta) -->
-        <div class="d-flex d-lg-none w-100 align-items-center justify-content-between">
-          <!-- Botón de Menú para Mobile -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <!-- Logo -->
-          <a class="navbar-brand mx-auto" href="/">
-            <img src="/images/workZone-logo-gray.png" alt="Logo WorkZone" class="header__logo">
+  <nav class="navbar navbar-expand-lg header__navbar">
+    <div class="container-fluid">
+      <!-- Primera fila (Mobile y Tableta) -->
+      <div class="d-flex d-lg-none w-100 align-items-center justify-content-between">
+        <!-- Botón de Menú para Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Logo -->
+        <a class="navbar-brand mx-auto" href="/">
+          <img src="/images/workZone-logo-gray.png" alt="Logo WorkZone" class="header__logo">
+        </a>
+        <!-- Íconos de Usuario -->
+        <div class="d-flex align-items-center">
+          <a href="/favoritos">
+            <i class="fas fa-heart header__icon me-3"></i>
           </a>
-  
-          <!-- Íconos de Usuario -->
-          <div class="d-flex align-items-center">
-            <i class="fas fa-heart me-3"></i>
-            <a href="/carrito-compra" class="position-relative me-3">
-              <i class="fas fa-shopping-cart"></i>
-              <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                0
-              </span>
-            </a>
-            <i class="fas fa-user"></i>
-          </div>
-        </div>
-  
-        <!-- Segunda fila (Mobile y Tableta) -->
-        <div class="d-flex d-lg-none w-100 mt-2">
-          <!-- Barra de Búsqueda -->
-          <form class="d-flex w-100">
-            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-        </div>
-  
-        <!-- Vista Desktop -->
-        <div class="collapse navbar-collapse d-none d-lg-flex align-items-center justify-content-between">
-          <!-- Logo -->
-          <a class="navbar-brand" href="/">
-            <img src="/images/workZone-logo-gray.png" alt="Logo WorkZone" class="header__logo">
+          <a href="/carrito-compra" class="position-relative me-3">
+            <i class="fas fa-shopping-cart header__icon"></i>
+            <span id="cart-count-mobile"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
           </a>
-  
-          <!-- Contenido del Navbar -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#products">Productos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categorías
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/">Protección Craneana</a></li>
-                <li><a class="dropdown-item" href="#">Protección Auditiva</a></li>
-                <li><a class="dropdown-item" href="#">Protección Respiratoria</a></li>
-                <li><a class="dropdown-item" href="#">Protección Ocular</a></li>
-                <li><a class="dropdown-item" href="#">Protección Facial</a></li>
-                <li><a class="dropdown-item" href="#">Protección de Manos</a></li>
-                <li><a class="dropdown-item" href="#">Protección de Pies</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#reviews">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#contact">Contáctanos</a>
-            </li>
-          </ul>
-  
-          <!-- Barra de Búsqueda -->
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-  
-          <!-- Íconos de Usuario -->
-          <div class="d-flex align-items-center">
-            <i class="fas fa-heart me-3"></i>
-            <a href="/carrito-compra" class="position-relative me-3">
-              <i class="fas fa-shopping-cart"></i>
-              <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                0
-              </span>
-            </a>
-            <i class="fas fa-user"></i>
-          </div>
+          <a href="/autenticacion/login">
+            <i class="fas fa-user header__icon"></i>
+          </a>
         </div>
       </div>
-    </nav>
-  </header>
-  
 
+      <!-- Menú Mobile -->
+      <div class="collapse d-lg-none  " id="mobileMenu">
+        <ul class="navbar-nav mt-2">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Productos</a>
+          </li>
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="/">Protección Craneana</a></li>
+              <li><a class="dropdown-item" href="#">Protección Auditiva</a></li>
+              <li><a class="dropdown-item" href="#">Protección Respiratoria</a></li>
+              <li><a class="dropdown-item" href="#">Protección Ocular</a></li>
+              <li><a class="dropdown-item" href="#">Protección Facial</a></li>
+              <li><a class="dropdown-item" href="#">Protección de Manos</a></li>
+              <li><a class="dropdown-item" href="#">Protección de Pies</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/#reviews">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Segunda fila (Mobile y Tableta) -->
+      <div class="d-flex d-lg-none w-100 mt-2">
+        <!-- Barra de Búsqueda -->
+        <form class="d-flex w-100">
+          <input class="form-control header__search-input" type="search" placeholder="Buscar..." aria-label="Search">
+          <button class="btn btn--secondary header__search-button" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Vista Desktop -->
+      <div class="collapse navbar-collapse d-none d-lg-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+          <img src="/images/workZone-logo-gray.png" alt="Logo WorkZone" class="header__logo">
+        </a>
+
+        <!-- Contenido del Navbar -->
+
+        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Productos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/">Protección Craneana</a></li>
+              <li><a class="dropdown-item" href="#">Protección Auditiva</a></li>
+              <li><a class="dropdown-item" href="#">Protección Respiratoria</a></li>
+              <li><a class="dropdown-item" href="#">Protección Ocular</a></li>
+              <li><a class="dropdown-item" href="#">Protección Facial</a></li>
+              <li><a class="dropdown-item" href="#">Protección de Manos</a></li>
+              <li><a class="dropdown-item" href="#">Protección de Pies</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#reviews">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact">Contáctanos</a>
+          </li>
+        </ul>
+
+        <!-- Barra de Búsqueda -->
+        <form class="d-flex me-4">
+          <input class="form-control header__search-input" type="search" placeholder="Buscar..." aria-label="Search">
+          <button class="btn btn--secondary header__search-button" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <!-- Íconos de Usuario -->
+        <div class="d-flex align-items-center">
+          <a href="/favoritos">
+            <i class="fas fa-heart header__icon me-3"></i>
+          </a>
+          <a href="/carrito-compra" class="position-relative me-3">
+            <i class="fas fa-shopping-cart header__icon"></i>
+            <span id="cart-count-desktop"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+          </a>
+          <a href="/autenticacion/login">
+            <i class="fas fa-user header__icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
