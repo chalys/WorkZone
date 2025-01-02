@@ -1,42 +1,3 @@
-<script>
-    function toggleMenu() {
-        const navList = document.getElementById("header-nav-list");
-        navList.classList.toggle("active");
-    }
-</script>
-
-<script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.carousel-slide');
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.remove('active');
-            if (i === index) {
-                slide.classList.add('active');
-            }
-        });
-    }
-
-    function changeSlide(direction) {
-        currentSlide += direction;
-        if (currentSlide < 0) {
-            currentSlide = slides.length - 1;
-        } else if (currentSlide >= slides.length) {
-            currentSlide = 0;
-        }
-        showSlide(currentSlide);
-    }
-
-    // Avance automático cada 5 segundos
-    setInterval(() => {
-        changeSlide(1);
-    }, 5000); // Cambia el número para ajustar la frecuencia (5000 ms = 5 segundos)
-
-    // Muestra el primer slide al cargar
-    showSlide(currentSlide);
-</script>
-
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -47,6 +8,9 @@
 
 <!-- Script -->
 <script src="/js/script.js"></script>
+
+<!-- Global Function -->
+<script src="/js/functions/global.js"></script>
 
 <!-- Cart -->
 <script src="/js/functions/cart.js"></script>

@@ -7,11 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnBuy = document.getElementById("btn-buy");
   const btnClearCart = document.getElementById("clear-cart");
 
-  const cutText = (text = "", long) =>
-    text.length > long ? text.substring(0, long) + "..." : text;
-  const converterMoneyArg = (num = 0) =>
-    num.toLocaleString("es-AR", { style: "currency", currency: "ARS" });
-
     // Guardar carrito en LocalStorage
     const saveCart = () => {
         localStorage.setItem('cart', JSON.stringify(cart));

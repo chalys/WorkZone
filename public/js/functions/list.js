@@ -23,13 +23,13 @@ function renderProducts() {
   currentProducts.forEach((product) => {
     const productCard = `
                     <div class="col">
-                        <article class="card h-100">
+                        <article class="card product-card h-100">
                             <div class="position-relative">
                                 <img class="card-img-top" src="/images/products/${product.image}" alt="${product.name}">
-                                <i class="fa-regular fa-heart position-absolute top-0 end-0 p-2 text-danger"></i>
+                                <i class="fa-regular fa-heart  product-card__favorite-icon position-absolute top-0 end-0 p-2 text-danger"></i>
                             </div>
                             <div class="card-body">
-                                <p class="card-text text-muted">${product.category}</p>
+                                <p class="card-text text-muted mb-0">${product.category}</p>
                                 <h5 class="card-title">${product.name}</h5>
                                 <p class="card-text fw-bold text--green">$${product.price}</p>
                             </div>
