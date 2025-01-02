@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartList = document.getElementById("cart-list");
   const cartTotal = document.getElementById("cart-total");
-  const cartCountMobile = document.getElementById('cart-count-mobile');  // Contador para la vista móvil
+  const cartCountMobile = document.getElementById('cart-count-mobile');
   const cartCountDesktop = document.getElementById('cart-count-desktop'); 
   const btnBuy = document.getElementById("btn-buy");
   const btnClearCart = document.getElementById("clear-cart");
@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Guardar carrito en LocalStorage
     const saveCart = () => {
         localStorage.setItem('cart', JSON.stringify(cart));
-        // Actualizar el contador en localStorage para su uso en otras vistas
         localStorage.setItem('cartCount', cart.length);
     };
 
@@ -91,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       saveCart();
       toastr.success('Producto añadido al carrito', '¡Éxito!');
       renderCart();
+      updateCartCount();
   };
 
   // Eliminar producto del carrito
@@ -99,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       saveCart();
       toastr.warning('Producto eliminado del carrito', 'Aviso');
       renderCart();
+      updateCartCount();
   };
 
   // Actualizar cantidad de producto
@@ -111,6 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       saveCart();
       renderCart();
+      updateCartCount();
   };
 
   // Vaciar carrito
@@ -119,6 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
       saveCart();
       toastr.info('Carrito vaciado', 'Información');
       renderCart();
+      updateCartCount();
   });
 
   // Simular compra

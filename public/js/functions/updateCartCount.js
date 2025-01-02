@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Actualizar el contador en ambas vistas
     if (cartCountMobile) {
-        cartCountMobile.textContent = cartCount;
+      cartCountMobile.textContent = cartCount;
     }
     if (cartCountDesktop) {
-        cartCountDesktop.textContent = cartCount;
+      cartCountDesktop.textContent = cartCount;
     }
-});
+  });
