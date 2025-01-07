@@ -29,7 +29,7 @@ function renderProducts() {
                                 <i class="fa-regular fa-heart  product-card__favorite-icon position-absolute top-0 end-0 p-2 text-danger"></i>
                             </div>
                             <div class="card-body">
-                                <p class="card-text text-muted mb-0">${product.category}</p>
+                                <p class="card-text small text-muted mb-0">${product.category}</p>
                                 <h5 class="card-title">${product.name}</h5>
                                 <p class="card-text fw-bold text--green">$${product.price}</p>
                             </div>

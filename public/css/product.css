@@ -26,3 +26,9 @@
 .product-card__favorite-icon:hover {
   color: var(--darkred)!important;
 }
+
+@media (max-width: 767px) {
+  .products__grid {
+    grid-template-columns: 1fr;
+  }
+}

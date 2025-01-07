@@ -3,7 +3,7 @@
 --gray: #666666;
 --white: #ffffff;
 --yellow: #ffde00;
---black: #000000;
+--black: #212529;
 --red: #ff5757; 
 --green: #4caf50;
 --blue:#0066cc;
@@ -21,6 +21,9 @@
 --lightyellow: #fff066;
 --lightblack: #484848;
 
+/* Otrs */
+--bglightgray: #f3f3f4;
+
   /* Fonts */
 --FamilyRoboto: 'Roboto', sans-serif;
 --FamilyLato: 'Lato', sans-serif;
@@ -35,10 +38,6 @@ body {
     margin: 0px;
     box-sizing: border-box;
 }
-/*
-h1, h2, h3 {
-    font-family: var(--FamilyLato);
-}*/
 
 a {
     text-decoration: none;
@@ -54,6 +53,7 @@ a {
     text-align: center;
     transition: background-color 0.3s ease;
 }
+
 
 .btn--primary {
     background-color: var(--yellow)!important;
@@ -78,8 +78,7 @@ a {
 .btn--tertiary {
     background-color: var(--white)!important;
     border: 1px solid var(--darkgray)!important;
-    color: var(--darkgray);
-    
+    color: var(--darkgray);    
 }
 
 .btn--tertiary:hover {
@@ -91,6 +90,7 @@ a {
 .text--green{
     color: var(--green);
 }
+
 .text--medium{
     margin: 0 0 5px;
     font-weight: bold;

@@ -1,0 +1,100 @@
+.info-cards {
+  background-color: var(--yellow);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0px 200px;
+}
+
+.info-card {
+  background-color: var(--yellow);
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+  flex: 1 1 calc(25% - 20px);
+}
+
+.info-card__icon {
+  color: var(--darkgray);
+  font-size: 2.5rem;
+  margin: 10px;
+
+}
+
+.info-card__content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.info-card__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--darkgray);
+  margin: 10px 0 5px;
+}
+
+.info-card__description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray);
+  margin-top: 5px;
+}
+
+/* Breakpoint para tabletas (pantallas de hasta 1023px) */
+@media (max-width: 1023px) {
+  .info-cards {
+    padding: 10px 20px;
+    justify-content: space-evenly;
+  }
+
+  .info-card {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(50% - 20px);
+    /* Dos columnas en tabletas */
+  }
+
+  .info-card__icon {
+    font-size: 2.5rem;
+  }
+
+  .info-card__title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .info-card__description {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+}
+
+/* Breakpoint para móviles (pantallas de hasta 767px) */
+@media (max-width: 767px) {
+  .info-cards {
+    padding: 10px;
+  }
+
+  .info-card {
+    flex: 1 1 100%;
+    /* Una columna en móviles */
+    max-width: 100%;
+    /* Asegura que ocupe todo el ancho */
+  }
+
+  .info-card__icon {
+    font-size: 2rem;
+  }
+
+  .info-card__title {
+    font-size: 1rem;
+  }
+
+  .info-card__description {
+    font-size: 0.75rem;
+  }
+}
