@@ -31,7 +31,7 @@ function renderProducts() {
                             <div class="card-body">
                                 <p class="card-text small text-muted mb-0">${product.category}</p>
                                 <h5 class="card-title">${product.name}</h5>
-                                <p class="card-text fw-bold text--green">$${product.price}</p>
+                                <p class="card-text fw-bold text--green">${converterMoneyArg(product.price)}</p>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between gap-2 border-0">
                                 <a href="/productos/detalle/${product.id}" class="btn btn--secondary w-100">VER MÁS</a>

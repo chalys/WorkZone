@@ -1,4 +1,5 @@
-const products = require("../../data/json/products.json"); // Importa los datos del archivo JSON
+const converterMoneyArg = require('../../utils/converterMoneyArg');
+const products = require("../../data/json/products.json");
 
 module.exports = (req, res) => {
   const { id } = req.params; // Captura el parámetro dinámico ":id"
@@ -17,7 +18,10 @@ module.exports = (req, res) => {
   })
     .then(product => {
       // Renderizar la vista con los datos del producto
-      res.render("product/detail", { product });
+      console.log("Producto encontrado:", product);
+      console.log("Precio convertido:", converterMoneyArg(product.price));
+      
+      res.render("product/detail", { product, converterMoneyArg });
     })
     .catch(error => {
       // Manejar errores (producto no encontrado o cualquier otro error)

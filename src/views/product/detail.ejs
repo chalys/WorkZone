@@ -22,7 +22,7 @@
               <h1 class="mb-3 text-uppercase text-dark">
                 <%= product.name %>
               </h1>
-              <p class="h4 product-card__price mb-3">$ <%= product.price %>
+              <p class="h4 product-card__price mb-3 text--green"><%= converterMoneyArg(product.price) %>
               </p>
 
               <div class="mb-3">
