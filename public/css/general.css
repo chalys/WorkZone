@@ -91,6 +91,20 @@ a {
     color: var(--green)!important;
 }
 
+.text--gray{
+    color: var(--darkgray)!important;
+}
+
+.text--link{
+    color: var(--blue)!important;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.text--link:hover {
+    color: var(--darkgray)!important;
+}
+
 .text--medium{
     margin: 0 0 5px;
     font-weight: bold;
