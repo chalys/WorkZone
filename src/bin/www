@@ -28,6 +28,10 @@ server.listen(port, () => {
   console.log(`http://localhost:${port}`)
 });
 
+/*server.listen(port, '0.0.0.0', () => {
+  console.log(`Servidor disponible en http://localhost:${port} y en http://192.168.100.200:${port}`);
+});
+*/
 server.on('error', onError);
 server.on('listening', onListening);
 

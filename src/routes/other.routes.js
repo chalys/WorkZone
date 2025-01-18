@@ -5,6 +5,6 @@ const { home, search, about } = require('../controllers/other');
 router.get('/', home)
 router.get('/home', home)
 router.get('/buscar', search)
-router.get('/sobre-nosotros', about)
+router.get('/sobre-workzone', about)
 
 module.exports = router;

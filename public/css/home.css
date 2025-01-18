@@ -97,62 +97,17 @@
 
 /*** SECTION CONTACT ***/
 
-/*** SECTION NEWSLETTER ***/
-.newsletter {
-    padding: 40px 220px;
+.newsletter{
     background-color: var(--yellow);
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-}
-.newsletter__header{
-    width: 40%;
-}
-
-.newsletter__form-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 50%;
-    box-sizing: border-box;    
-}
-
-.newsletter__form {
-    display: flex;
-    align-items: center;    
-    width: 100%;
 }
 
 .newsletter__input {
-    border-radius: 5px 0 0 5px;    
-    width: 70%;
+    border-radius: 5px 0 0 5px!important;    
 }
 
 .newsletter__submit {
     border-radius: 0 5px 5px 0!important;
-    width: 30%;
 }
-
-/*** SECTION NEWSLETTER ***/
-.whatsapp-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366; /* Color verde de WhatsApp */
-    color: var(--white); /* Color blanco para el icono */
-    font-size: 24px;
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    text-decoration: none;
-    transition: transform 0.3s;
-}
-
-.whatsapp-icon:hover {
-    transform: scale(1.1);
-}
-
 
 
 /*** APLICAR A PANTALLAS DE HASTA 1023px ***/
@@ -173,24 +128,7 @@
     }
 
 
-    .newsletter {
-        padding: 0px 20px;        
-    }
 
-    .newsletter__header{
-        width: 50%;
-    }
-
-    .newsletter__form-container {
-        width: 50%;
-    }   
-    .newsletter__input {
-        width: 65%;
-    }
-    
-    .newsletter__submit {
-        width: 35%;
-    }
 }
 
 @media (max-width: 767px) {
@@ -208,39 +146,16 @@
         flex: 1;
     }
 
-    /*** SECTION NEWSLETTER ***/
-    .newsletter {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .newsletter__header {
-        font-size: 1.5rem;
-        text-align: left;
-        margin: 0 0 10px 0;   
-        width: 100%;
-    }
-
-    .newsletter__form-container {
-        width: 100%;
-    }
-
-    .newsletter__form {
-        flex-direction: column;
-        padding: 0;
-        width: 100%;
-    }
 
     .newsletter__input {
-        width: 100%;
-        border-radius: 5px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
+
+        border-radius: 5px!important;
+
     }
 
     .newsletter__submit {
-        width: 100%;
-        border-radius: 5px;
+
+        border-radius: 5px!important;
     }
 
 }

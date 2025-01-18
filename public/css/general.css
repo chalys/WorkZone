@@ -127,3 +127,23 @@ a {
     color: var(--gray);
     font-size: 1rem;
 }
+
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1050;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
