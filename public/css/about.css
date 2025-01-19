@@ -1,3 +1,13 @@
 .about {
   background-color: var(--yellow);
 }
+
+.text--justify {
+  text-align: justify;
+}
+
+.img--size{
+  max-width: 100px!important; 
+  height: auto!important; 
+  object-fit: cover!important;
+}
