@@ -1,0 +1,141 @@
+[
+  {
+    "id": "1",
+    "userName": "admin_jose",
+    "fullName": "José Pérez",
+    "email": "jose.admin@example.com",
+    "passwordHash": "hashed_password_admin_123",
+    "role": "admin",
+    "profileImage": "male-user1.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "facebook": "https://facebook.com/jose.perez",
+      "x": "https://x.com/jose_perez",
+      "instagram": "https://instagram.com/jose_perez"
+    }
+  },
+  {
+    "id": "2",
+    "userName": "moderator_ana",
+    "fullName": "Ana Gómez",
+    "email": "ana.moderator@example.com",
+    "passwordHash": "hashed_password_moderator_123",
+    "role": "moderator",
+    "profileImage": "female-user1.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "facebook": "https://facebook.com/ana.gomez",
+      "instagram": "https://instagram.com/ana_gomez"
+    }
+  },
+  {
+    "id": "3",
+    "userName": "customer_maria",
+    "fullName": "María López",
+    "email": "maria.customer@example.com",
+    "passwordHash": "hashed_password_customer_123",
+    "role": "customer",
+    "profileImage": "female-user2.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "facebook": "https://facebook.com/maria.lopez",
+      "x": "https://x.com/maria_lopez"
+    }
+  },
+  {
+    "id": "4",
+    "userName": "customer_carlos",
+    "fullName": "Carlos Ramírez",
+    "email": "carlos.customer@example.com",
+    "passwordHash": "hashed_password_customer_456",
+    "role": "customer",
+    "profileImage": "male-user2.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "instagram": "https://instagram.com/carlos_ramirez"
+    }
+  },
+  {
+    "id": "5",
+    "userName": "admin_laura",
+    "fullName": "Laura Martínez",
+    "email": "laura.admin@example.com",
+    "passwordHash": "hashed_password_admin_456",
+    "role": "admin",
+    "profileImage": "female-user1.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "facebook": "https://facebook.com/laura.martinez",
+      "x": "https://x.com/laura_martinez",
+      "instagram": "https://instagram.com/laura_martinez"
+    }
+  },
+  {
+    "id": "6",
+    "userName": "moderator_pedro",
+    "fullName": "Pedro Sánchez",
+    "email": "pedro.moderator@example.com",
+    "passwordHash": "hashed_password_moderator_456",
+    "role": "moderator",
+    "profileImage": "male-user1.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "x": "https://x.com/pedro_sanchez"
+    }
+  },
+  {
+    "id": "7",
+    "userName": "customer_luis",
+    "fullName": "Luis Fernández",
+    "email": "luis.customer@example.com",
+    "passwordHash": "hashed_password_customer_789",
+    "role": "customer",
+    "profileImage": "male-user2.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "facebook": "https://facebook.com/luis.fernandez",
+      "instagram": "https://instagram.com/luis_fernandez"
+    }
+  },
+  {
+    "id": "8",
+    "userName": "customer_sofia",
+    "fullName": "Sofía Castro",
+    "email": "sofia.customer@example.com",
+    "passwordHash": "hashed_password_customer_101",
+    "role": "customer",
+    "profileImage": "female-user2.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "x": "https://x.com/sofia_castro",
+      "instagram": "https://instagram.com/sofia_castro"
+    }
+  },
+  {
+    "id": "9",
+    "userName": "admin_miguel",
+    "fullName": "Miguel Torres",
+    "email": "miguel.admin@example.com",
+    "passwordHash": "hashed_password_admin_789",
+    "role": "admin",
+    "profileImage": "male-user1.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "facebook": "https://facebook.com/miguel.torres",
+      "x": "https://x.com/miguel_torres"
+    }
+  },
+  {
+    "id": "10",
+    "userName": "moderator_elena",
+    "fullName": "Elena Ruiz",
+    "email": "elena.moderator@example.com",
+    "passwordHash": "hashed_password_moderator_789",
+    "role": "moderator",
+    "profileImage": "female-user1.jpg",
+    "isActive": true,
+    "socialMedia": {
+      "instagram": "https://instagram.com/elena_ruiz"
+    }
+  }
+]

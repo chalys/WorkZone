@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "product_id": "1",
+      "user_id": "3",
+      "rating": 5,
+      "comment": "El casco es muy resistente y cómodo, perfecto para situaciones de emergencia.",
+      "created_at": "2024-10-19T04:45:00Z",
+      "updated_at": "2024-10-19T04:45:00Z"
+    },
+    {
+      "id": "2",
+      "product_id": "2",
+      "user_id": "4",
+      "rating": 4,
+      "comment": "Los anteojos son cómodos y protegen bien, pero se empañan un poco.",
+      "created_at": "2025-02-19T04:45:00Z",
+      "updated_at": "2025-02-19T04:45:00Z"
+    },
+    {
+      "id": "3",
+      "product_id": "3",
+      "user_id": "7",
+      "rating": 5,
+      "comment": "Excelente protección auditiva, muy cómodos para usar durante horas.",
+      "created_at": "2025-01-19T04:45:00Z",
+      "updated_at": "2025-01-19T04:45:00Z"
+    },
+    {
+      "id": "4",
+      "product_id": "4",
+      "user_id": "8",
+      "rating": 5,
+      "comment": "El respirador es muy efectivo y se ajusta perfectamente a la cara.",
+      "created_at": "2022-10-19T04:45:00Z",
+      "updated_at": "2022-10-19T04:45:00Z"
+    }
+  ]

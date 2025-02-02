@@ -1,0 +1,114 @@
+[
+{
+    "id": "1",
+    "categoryName": "Protección Craneana",
+    "description": "Equipos diseñados para proteger la cabeza contra impactos, golpes y otros riesgos en entornos industriales o de construcción. Incluye cascos de seguridad, gorras antiimpacto y accesorios como arneses y viseras.",
+    "image": "proteccion-craneana.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "2",
+    "categoryName": "Protección Auditiva",
+    "description": "Equipos diseñados para proteger los oídos de niveles altos de ruido en entornos laborales. Incluye orejeras, tapones auditivos y protectores personalizados con filtros especiales.",
+    "image": "proteccion-auditiva.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "3",
+    "categoryName": "Protección Respiratoria",
+    "description": "Equipos diseñados para proteger las vías respiratorias de partículas, gases, vapores y otros contaminantes. Incluye mascarillas, respiradores, filtros y sistemas de suministro de aire.",
+    "image": "proteccion-respiratoria.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "4",
+    "categoryName": "Protección Ocular",
+    "description": "Equipos diseñados para proteger los ojos de partículas, líquidos, radiación y otros riesgos. Incluye gafas de seguridad, lentes antiimpacto y protectores contra soldadura.",
+    "image": "proteccion-ocular.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "5",
+    "categoryName": "Protección Facial",
+    "description": "Equipos diseñados para proteger el rostro de salpicaduras, impactos, radiación y otros riesgos. Incluye caretas, máscaras completas y protectores faciales para soldadura.",
+    "image": "proteccion-facial.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "6",
+    "categoryName": "Protección de Manos",
+    "description": "Equipos diseñados para proteger las manos de cortes, quemaduras, productos químicos y otros riesgos. Incluye guantes de nitrilo, guantes antiimpacto, guantes térmicos y guantes resistentes a cortes.",
+    "image": "proteccion-de-manos.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "7",
+    "categoryName": "Protección de Pies",
+    "description": "Equipos diseñados para proteger los pies de impactos, compresión, perforaciones y otros riesgos. Incluye botas de seguridad, zapatos antiperforación y calzado resistente a productos químicos.",
+    "image": "proteccion-de-pies.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "8",
+    "categoryName": "Protección Corporal",
+    "description": "Equipos diseñados para proteger el cuerpo de riesgos como salpicaduras químicas, fuego, electricidad y otros peligros. Incluye overoles, chalecos reflectantes, trajes ignífugos y delantales resistentes a químicos.",
+    "image": "proteccion-corporal.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },  
+  {
+    "id": "9",
+    "categoryName": "Protección contra Caídas",
+    "description": "Equipos diseñados para prevenir lesiones por caídas en alturas. Incluye arneses de seguridad, líneas de vida, mosquetones, eslingas y sistemas de anclaje.",
+    "image": "proteccion-contra-caidas.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "10",
+    "categoryName": "Señalización y Seguridad Vial",
+    "description": "Equipos y accesorios diseñados para mejorar la visibilidad y seguridad en entornos laborales o viales. Incluye chalecos reflectantes, conos de señalización, barreras y luces de advertencia.",
+    "image": "señalizacion-y-seguridad-vial.png",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "11",
+    "categoryName": "Protección contra Riesgos Eléctricos",
+    "description": "Equipos diseñados para proteger a los trabajadores de riesgos eléctricos como descargas, arcos eléctricos y cortocircuitos. Incluye guantes dieléctricos, mantas aislantes y herramientas aisladas.",
+    "image": "https://example.com/images/proteccion-electrica.jpg",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "12",
+    "categoryName": "Protección contra Riesgos Biológicos",
+    "description": "Equipos diseñados para proteger a los trabajadores de riesgos biológicos como virus, bacterias y fluidos corporales. Incluye mascarillas quirúrgicas, trajes de bioseguridad, guantes estériles y protectores faciales.",
+    "image": "https://example.com/images/proteccion-biologica.jpg",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "13",
+    "categoryName": "Protección contra Riesgos Químicos",
+    "description": "Equipos diseñados para proteger a los trabajadores de sustancias químicas peligrosas. Incluye trajes químicos, guantes resistentes a químicos, máscaras con filtros específicos y delantales de protección.",
+    "image": "https://example.com/images/proteccion-quimica.jpg",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "14",
+    "categoryName": "Protección contra Radiación",
+    "description": "Equipos diseñados para proteger a los trabajadores de radiación ionizante y no ionizante. Incluye delantales plomados, gafas de protección contra radiación y dosímetros personales.",
+    "image": "https://example.com/images/proteccion-radiacion.jpg",
+    "created_at": "2023-10-01T12:00:00Z",
+    "updated_at": "2023-10-01T12:00:00Z"
+  }
+]

@@ -1,0 +1,35 @@
+[
+    {
+      "id": "1",
+      "roleName": "admin",
+      "permissions": [
+        "manage_products", 
+        "manage_users", 
+        "manage_orders", 
+        "manage_reviews", 
+        "manage_categories", 
+        "view_reports", 
+        "manage_discounts" 
+      ]
+    },
+    {
+      "id": "2",
+      "roleName": "moderator",
+      "permissions": [
+        "manage_reviews", 
+        "manage_orders", 
+        "view_reports" 
+      ]
+    },
+    {
+      "id": "3",
+      "roleName": "customer",
+      "permissions": [
+        "view_products",
+        "purchase_products", 
+        "write_reviews",
+        "view_orders",
+        "manage_cart"
+      ]
+    }
+  ]
