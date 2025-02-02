@@ -105,6 +105,11 @@ a {
     color: var(--darkgray)!important;
 }
 
+.text--notFound {
+    color:var(--red)!important;
+}
+
+
 .text--medium{
     margin: 0 0 5px;
     font-weight: bold;

@@ -91,9 +91,11 @@
                                                                     class="fa-regular fa-heart product-card__favorite-icon position-absolute top-0 end-0 p-2 text-danger"></i>
                                                             </div>
                                                             <div class="card-body text-start">
-                                                                <p class="card-text small text-muted mb-0">
+                                                                <!-- <p class="card-text small text-muted mb-0">
                                                                     <%= products[j].category %>
-                                                                </p>
+                                                                </p> -->
+                                                                <% const category = categories.find(cat => cat.id === products[j].category_id); %>
+                                                                <p class="card-text small text-muted mb-0"><%= category ? category.categoryName : "Sin categoría" %></p>   
                                                                 <h5 class="card-title">
                                                                     <%= products[j].name %>
                                                                 </h5>
@@ -271,18 +273,18 @@
                                                         <% } %>
                                                     </div>
                                                 </div>
-                                                <% } %>
+                                            <% } %>
                                         </div>
                                     </div>
-                                    <% }); %>
+                                <% }); %>
                             </div>
                         </div>
                     </section>
-                    <!-- /Section review -->
+                    
 
                     <!-- Section newsletter -->
                     <%- include("../partials/newsletter") %>
-                        <!-- /Section newsletter -->
+                    
             </main>
             <%- include("../partials/footer") %>
                 <!-- Scripts -->

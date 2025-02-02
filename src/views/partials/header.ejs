@@ -45,13 +45,15 @@
               Categorías
             </a>
             <ul class="dropdown-menu ">
-              <li><a class="dropdown-item" href="/">Protección Craneana</a></li>
-              <li><a class="dropdown-item" href="#">Protección Auditiva</a></li>
-              <li><a class="dropdown-item" href="#">Protección Respiratoria</a></li>
-              <li><a class="dropdown-item" href="#">Protección Ocular</a></li>
-              <li><a class="dropdown-item" href="#">Protección Facial</a></li>
-              <li><a class="dropdown-item" href="#">Protección de Manos</a></li>
-              <li><a class="dropdown-item" href="#">Protección de Pies</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/1">Protección Craneana</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/2">Protección Auditiva</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/3">Protección Respiratoria</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/4">Protección Ocular</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/5">Protección Facial</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/6">Protección de Manos</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/7">Protección de Pies</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/8">Protección Corporal</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/9">Protección contra Caidas</a></li>
             </ul>
           </li>
 
@@ -67,8 +69,8 @@
       <!-- Segunda fila (Mobile y Tableta) -->
       <div class="d-flex d-lg-none w-100 mt-2">
         <!-- Barra de Búsqueda -->
-        <form class="d-flex w-100">
-          <input class="form-control header__search-input" type="search" placeholder="Buscar..." aria-label="Search">
+        <form class="d-flex w-100" action="/buscar" method="GET">
+          <input class="form-control header__search-input" type="search" name="keywords" placeholder="Buscar..." aria-label="Search">
           <button class="btn btn--secondary header__search-button" type="submit">
             <i class="fas fa-search"></i>
           </button>
@@ -96,13 +98,15 @@
               Categorías
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/">Protección Craneana</a></li>
-              <li><a class="dropdown-item" href="#">Protección Auditiva</a></li>
-              <li><a class="dropdown-item" href="#">Protección Respiratoria</a></li>
-              <li><a class="dropdown-item" href="#">Protección Ocular</a></li>
-              <li><a class="dropdown-item" href="#">Protección Facial</a></li>
-              <li><a class="dropdown-item" href="#">Protección de Manos</a></li>
-              <li><a class="dropdown-item" href="#">Protección de Pies</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/1">Protección Craneana</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/2">Protección Auditiva</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/3">Protección Respiratoria</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/4">Protección Ocular</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/5">Protección Facial</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/6">Protección de Manos</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/7">Protección de Pies</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/8">Protección Corporal</a></li>
+              <li><a class="dropdown-item" href="/productos/categoria/9">Protección contra Caidas</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -114,8 +118,8 @@
         </ul>
 
         <!-- Barra de Búsqueda -->
-        <form class="d-flex me-4">
-          <input class="form-control header__search-input" type="search" placeholder="Buscar..." aria-label="Search">
+        <form class="d-flex me-4" action="/buscar" method="GET">
+          <input class="form-control header__search-input" type="search" name="keywords" placeholder="Buscar..." aria-label="Search">
           <button class="btn btn--secondary header__search-button" type="submit">
             <i class="fas fa-search"></i>
           </button>

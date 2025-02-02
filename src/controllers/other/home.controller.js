@@ -1,10 +1,22 @@
+const { loadData } = require("../../data/json");
 const converterMoneyArg = require("../../utils/converterMoneyArg");
 const timeSince = require("../../utils/timeSince");
-const products = require("../../data/json/products.json");
-const reviews = require("../../data/json/reviews.json");
-const users = require("../../data/json/users.json")
 
 module.exports = (req, res) => {
+
+  const products = loadData("products");
+  const reviews = loadData("reviews");
+  const users = loadData("users")
+  const categories = loadData("categories");
+
+  const selectedProductFields = products.map(product=>({
+    id:product.id,
+    name: product.name,
+    category_id: product.category_id,
+    price:product.price,
+    image:product.image
+  }))
+
   const selectedUserFields = users.map(user=>({
     id:user.id,
     userName: user.userName,
@@ -13,7 +25,7 @@ module.exports = (req, res) => {
   }))
   
   res.render("./other/home", {
-    products, reviews, users:selectedUserFields,
+    products:selectedProductFields, reviews, users:selectedUserFields, categories,
     converterMoneyArg, timeSince
   });
 };
