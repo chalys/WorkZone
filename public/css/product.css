@@ -16,16 +16,16 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  color: var(--red)!important;
-  font-size: 1rem;
-  font-weight: normal;
+  /*color: var(--red)!important;*/
+  /*font-size: 1rem;*/
+  /*font-weight: normal;*/
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.product-card__favorite-icon:hover {
-  color: var(--darkred)!important;
-}
+/*.product-card__favorite-icon:hover {*/
+  /*color: var(--darkred)!important;*/
+/*}*/
 
 @media (max-width: 767px) {
   .products__grid {

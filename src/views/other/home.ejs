@@ -87,8 +87,8 @@
                                                                 <img class="card-img-top"
                                                                     src="./images/products/<%= products[j].image %>"
                                                                     alt="<%= products[j].name %>">
-                                                                <i
-                                                                    class="fa-regular fa-heart product-card__favorite-icon position-absolute top-0 end-0 p-2 text-danger"></i>
+                                                                    <i class="fa-heart product-card__favorite-icon position-absolute top-0 end-0 p-2"
+                                                                    data-product-id="<%= products[j].id %>"></i>
                                                             </div>
                                                             <div class="card-body text-start">
                                                                 <!-- <p class="card-text small text-muted mb-0">

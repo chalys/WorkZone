@@ -45,8 +45,8 @@
                                                     <img class="card-img-top"
                                                         src="/images/products/<%= product.image %>"
                                                         alt="<%= product.name %>">
-                                                    <i
-                                                        class="fa-regular fa-heart product-card__favorite-icon position-absolute top-0 end-0 p-2 text-danger"></i>
+                                                        <i class="fa-heart product-card__favorite-icon position-absolute top-0 end-0 p-2"
+                                                        data-product-id="<%= product.id %>"></i>
                                                 </div>
                                                 <div class="card-body">
                                                     <% const category=categories.find(cat=> cat.id ===

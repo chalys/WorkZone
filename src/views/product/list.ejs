@@ -33,17 +33,42 @@
                       </div>
                     </div>
                   <% } %>
+                  <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <% products.forEach(product => { %>
+                      <div class="col">
+                        <article class="card product-card h-100">
+                          <div class="position-relative">
+                            <img class="card-img-top" src="/images/products/<%= product.image %>" alt="<%= product.name %>">
+                            <i class="fa-regular fa-heart product-card__favorite-icon position-absolute top-0 end-0 p-2 text-danger" onclick="toggleFavorite(<%= product.id %>)"></i>
+                          </div>
+                          <div class="card-body">
+                            <% const category = categories.find(cat => cat.id === product.category_id); %>
+                            <p class="card-text small text-muted mb-0"><%= category ? category.categoryName : "Sin categoría" %></p>   
+                            <h5 class="card-title"><%= product.name %></h5>
+                            <p class="card-text fw-bold text--green"><%= converterMoneyArg(product.price) %></p>
+                          </div>
+                          <div class="card-footer bg-white d-flex justify-content-between gap-2 border-0">
+                            <a href="/productos/detalle/<%= product.id %>" class="btn btn--secondary w-100">VER MÁS</a>
+                            <button class="btn btn--primary" type="button" onclick="addProductCart('<%= product.id %>')">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                          </div>
+                        </article>
+                      </div>
+                    <% }); %>
+                  </div> -->
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                     <% products.forEach(product => { %>
                       <div class="col">
                         <article class="card product-card h-100">
                           <div class="position-relative">
                             <img class="card-img-top" src="/images/products/<%= product.image %>" alt="<%= product.name %>">
-                            <i class="fa-regular fa-heart product-card__favorite-icon position-absolute top-0 end-0 p-2 text-danger"></i>
+                            <i class="fa-heart product-card__favorite-icon position-absolute top-0 end-0 p-2"
+                               data-product-id="<%= product.id %>"></i>
                           </div>
                           <div class="card-body">
                             <% const category = categories.find(cat => cat.id === product.category_id); %>
-                            <p class="card-text small text-muted mb-0"><%= category ? category.categoryName : "Sin categoría" %></p>   
+                            <p class="card-text small text-muted mb-0"><%= category ? category.categoryName : "Sin categoría" %></p>
                             <h5 class="card-title"><%= product.name %></h5>
                             <p class="card-text fw-bold text--green"><%= converterMoneyArg(product.price) %></p>
                           </div>
